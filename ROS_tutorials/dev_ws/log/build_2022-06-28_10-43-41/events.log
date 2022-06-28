@@ -1,0 +1,875 @@
+[0.000000] (-) TimerEvent: {}
+[0.000366] (turtlesim) JobQueued: {'identifier': 'turtlesim', 'dependencies': OrderedDict()}
+[0.000472] (turtlesim) JobStarted: {'identifier': 'turtlesim'}
+[0.083644] (-) TimerEvent: {}
+[0.184277] (-) TimerEvent: {}
+[0.202400] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'cmake'}
+[0.212862] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'build'}
+[0.227565] (turtlesim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/build/turtlesim', '--', '-j1', '-l1'], 'cwd': '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/build/turtlesim', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'marangoni'), ('SSH_AGENT_PID', '1559'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_composition/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/marangoni'), ('OLDPWD', '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1349'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'marangoni'), ('JOURNAL_STREAM', '8:36415'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'marangoni'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/marangoni-VirtualBox:@/tmp/.ICE-unix/1603,unix/marangoni-VirtualBox:/tmp/.ICE-unix/1603'), ('INVOCATION_ID', '4997cdf2260643148fc3887d6c248857'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/79376eab_b31f_47df_bb6a_e4300f5d9c5e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.93'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_subscriber:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_service:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_publisher:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_action_server:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_action_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_executors:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_timer:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_subscriber:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_service:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_publisher:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_composition:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_server:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/build/turtlesim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_subscriber:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_service:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_service/lib/python3.8/site-packages:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_publisher:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_client/lib/python3.8/site-packages:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_action_server:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_action_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_action_client/lib/python3.8/site-packages:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_executors:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_executors/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_timer:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_subscriber:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_service:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_publisher:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_composition:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_server:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_subscriber:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_service:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_publisher:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_action_server:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_action_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_executors:/opt/ros/foxy')]), 'shell': False}
+[0.284656] (-) TimerEvent: {}
+[0.404958] (-) TimerEvent: {}
+[0.522848] (-) TimerEvent: {}
+[0.631515] (-) TimerEvent: {}
+[0.732309] (-) TimerEvent: {}
+[0.836324] (-) TimerEvent: {}
+[0.939813] (-) TimerEvent: {}
+[1.048396] (-) TimerEvent: {}
+[1.111828] (turtlesim) StdoutLine: {'line': b'[  1%] Built target turtlesim__cpp\n'}
+[1.151952] (-) TimerEvent: {}
+[1.263516] (-) TimerEvent: {}
+[1.375583] (-) TimerEvent: {}
+[1.428998] (turtlesim) StdoutLine: {'line': b'[ 11%] Built target turtlesim__rosidl_typesupport_cpp\n'}
+[1.487545] (-) TimerEvent: {}
+[1.595516] (-) TimerEvent: {}
+[1.696421] (-) TimerEvent: {}
+[1.737439] (turtlesim) StdoutLine: {'line': b'[ 21%] Built target turtlesim__rosidl_generator_c\n'}
+[1.803497] (-) TimerEvent: {}
+[1.907537] (-) TimerEvent: {}
+[2.015627] (-) TimerEvent: {}
+[2.058142] (turtlesim) StdoutLine: {'line': b'[ 31%] Built target turtlesim__rosidl_typesupport_c\n'}
+[2.119437] (-) TimerEvent: {}
+[2.220295] (-) TimerEvent: {}
+[2.335541] (-) TimerEvent: {}
+[2.376094] (turtlesim) StdoutLine: {'line': b'[ 41%] Built target turtlesim__rosidl_typesupport_introspection_cpp\n'}
+[2.448216] (-) TimerEvent: {}
+[2.551564] (-) TimerEvent: {}
+[2.657024] (-) TimerEvent: {}
+[2.767564] (-) TimerEvent: {}
+[2.853446] (turtlesim) StdoutLine: {'line': b'[ 51%] Built target turtlesim__rosidl_typesupport_fastrtps_cpp\n'}
+[2.869793] (-) TimerEvent: {}
+[2.975547] (-) TimerEvent: {}
+[3.078954] (-) TimerEvent: {}
+[3.187528] (-) TimerEvent: {}
+[3.291622] (-) TimerEvent: {}
+[3.328803] (turtlesim) StdoutLine: {'line': b'[ 61%] Built target turtlesim__rosidl_typesupport_fastrtps_c\n'}
+[3.392324] (-) TimerEvent: {}
+[3.497445] (-) TimerEvent: {}
+[3.517424] (turtlesim) StdoutLine: {'line': b'[ 71%] Built target turtlesim__rosidl_typesupport_introspection_c\n'}
+[3.597607] (-) TimerEvent: {}
+[3.675943] (turtlesim) StdoutLine: {'line': b'[ 71%] Built target turtlesim\n'}
+[3.697759] (-) TimerEvent: {}
+[3.800436] (-) TimerEvent: {}
+[3.901136] (-) TimerEvent: {}
+[3.923203] (turtlesim) StdoutLine: {'line': b'[ 73%] Built target mimic\n'}
+[4.003534] (-) TimerEvent: {}
+[4.123522] (-) TimerEvent: {}
+[4.231550] (-) TimerEvent: {}
+[4.304252] (turtlesim) StdoutLine: {'line': b'[ 75%] Built target draw_square\n'}
+[4.331702] (-) TimerEvent: {}
+[4.436073] (-) TimerEvent: {}
+[4.542765] (-) TimerEvent: {}
+[4.557224] (turtlesim) StdoutLine: {'line': b'[ 76%] Built target turtlesim__py\n'}
+[4.646110] (-) TimerEvent: {}
+[4.758537] (-) TimerEvent: {}
+[4.862116] (-) TimerEvent: {}
+[4.963104] (-) TimerEvent: {}
+[5.068121] (-) TimerEvent: {}
+[5.072512] (turtlesim) StdoutLine: {'line': b'[ 85%] Built target turtlesim__python\n'}
+[5.180003] (-) TimerEvent: {}
+[5.290887] (-) TimerEvent: {}
+[5.391866] (-) TimerEvent: {}
+[5.407546] (turtlesim) StdoutLine: {'line': b'[ 87%] Built target turtlesim__rosidl_typesupport_introspection_c__pyext\n'}
+[5.492428] (-) TimerEvent: {}
+[5.602304] (-) TimerEvent: {}
+[5.711524] (-) TimerEvent: {}
+[5.733376] (turtlesim) StdoutLine: {'line': b'[ 89%] Built target turtlesim__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.811692] (-) TimerEvent: {}
+[5.925299] (-) TimerEvent: {}
+[6.039583] (-) TimerEvent: {}
+[6.147528] (-) TimerEvent: {}
+[6.188269] (turtlesim) StdoutLine: {'line': b'[ 91%] Built target turtle_teleop_key\n'}
+[6.249165] (-) TimerEvent: {}
+[6.359524] (-) TimerEvent: {}
+[6.471536] (-) TimerEvent: {}
+[6.484105] (turtlesim) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target turtlesim_node\x1b[0m\n'}
+[6.583546] (-) TimerEvent: {}
+[6.689185] (-) TimerEvent: {}
+[6.803551] (-) TimerEvent: {}
+[6.908304] (-) TimerEvent: {}
+[7.011862] (-) TimerEvent: {}
+[7.112489] (-) TimerEvent: {}
+[7.231540] (-) TimerEvent: {}
+[7.332253] (-) TimerEvent: {}
+[7.439520] (-) TimerEvent: {}
+[7.540263] (-) TimerEvent: {}
+[7.591487] (turtlesim) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/turtlesim_node.dir/src/turtle_frame.cpp.o\x1b[0m\n'}
+[7.640425] (-) TimerEvent: {}
+[7.741140] (-) TimerEvent: {}
+[7.841948] (-) TimerEvent: {}
+[7.942809] (-) TimerEvent: {}
+[8.047591] (-) TimerEvent: {}
+[8.157689] (-) TimerEvent: {}
+[8.258519] (-) TimerEvent: {}
+[8.370442] (-) TimerEvent: {}
+[8.479494] (-) TimerEvent: {}
+[8.587527] (-) TimerEvent: {}
+[8.700743] (-) TimerEvent: {}
+[8.804198] (-) TimerEvent: {}
+[8.908223] (-) TimerEvent: {}
+[9.009309] (-) TimerEvent: {}
+[9.110430] (-) TimerEvent: {}
+[9.215069] (-) TimerEvent: {}
+[9.319544] (-) TimerEvent: {}
+[9.423519] (-) TimerEvent: {}
+[9.527533] (-) TimerEvent: {}
+[9.632454] (-) TimerEvent: {}
+[9.734479] (-) TimerEvent: {}
+[9.836229] (-) TimerEvent: {}
+[9.938140] (-) TimerEvent: {}
+[10.038893] (-) TimerEvent: {}
+[10.144453] (-) TimerEvent: {}
+[10.255494] (-) TimerEvent: {}
+[10.359569] (-) TimerEvent: {}
+[10.467566] (-) TimerEvent: {}
+[10.568636] (-) TimerEvent: {}
+[10.669534] (-) TimerEvent: {}
+[10.770329] (-) TimerEvent: {}
+[10.871219] (-) TimerEvent: {}
+[10.972120] (-) TimerEvent: {}
+[11.078954] (-) TimerEvent: {}
+[11.185149] (-) TimerEvent: {}
+[11.291327] (-) TimerEvent: {}
+[11.391988] (-) TimerEvent: {}
+[11.499521] (-) TimerEvent: {}
+[11.602391] (-) TimerEvent: {}
+[11.703284] (-) TimerEvent: {}
+[11.804152] (-) TimerEvent: {}
+[11.905000] (-) TimerEvent: {}
+[12.005846] (-) TimerEvent: {}
+[12.108214] (-) TimerEvent: {}
+[12.213667] (-) TimerEvent: {}
+[12.321379] (-) TimerEvent: {}
+[12.422303] (-) TimerEvent: {}
+[12.523407] (-) TimerEvent: {}
+[12.624237] (-) TimerEvent: {}
+[12.725024] (-) TimerEvent: {}
+[12.825849] (-) TimerEvent: {}
+[12.926684] (-) TimerEvent: {}
+[13.027428] (-) TimerEvent: {}
+[13.128151] (-) TimerEvent: {}
+[13.232317] (-) TimerEvent: {}
+[13.333378] (-) TimerEvent: {}
+[13.434327] (-) TimerEvent: {}
+[13.535268] (-) TimerEvent: {}
+[13.636489] (-) TimerEvent: {}
+[13.737308] (-) TimerEvent: {}
+[13.838156] (-) TimerEvent: {}
+[13.939007] (-) TimerEvent: {}
+[14.039851] (-) TimerEvent: {}
+[14.140920] (-) TimerEvent: {}
+[14.241781] (-) TimerEvent: {}
+[14.342598] (-) TimerEvent: {}
+[14.443365] (-) TimerEvent: {}
+[14.544491] (-) TimerEvent: {}
+[14.645301] (-) TimerEvent: {}
+[14.746154] (-) TimerEvent: {}
+[14.847117] (-) TimerEvent: {}
+[14.951539] (-) TimerEvent: {}
+[15.054167] (-) TimerEvent: {}
+[15.155671] (-) TimerEvent: {}
+[15.265703] (-) TimerEvent: {}
+[15.395550] (-) TimerEvent: {}
+[15.496443] (-) TimerEvent: {}
+[15.607528] (-) TimerEvent: {}
+[15.711513] (-) TimerEvent: {}
+[15.814686] (-) TimerEvent: {}
+[15.919530] (-) TimerEvent: {}
+[16.020741] (-) TimerEvent: {}
+[16.121614] (-) TimerEvent: {}
+[16.222808] (-) TimerEvent: {}
+[16.323611] (-) TimerEvent: {}
+[16.424439] (-) TimerEvent: {}
+[16.525455] (-) TimerEvent: {}
+[16.626302] (-) TimerEvent: {}
+[16.727146] (-) TimerEvent: {}
+[16.828126] (-) TimerEvent: {}
+[16.928931] (-) TimerEvent: {}
+[17.030224] (-) TimerEvent: {}
+[17.131029] (-) TimerEvent: {}
+[17.232341] (-) TimerEvent: {}
+[17.333382] (-) TimerEvent: {}
+[17.434248] (-) TimerEvent: {}
+[17.535088] (-) TimerEvent: {}
+[17.636536] (-) TimerEvent: {}
+[17.737341] (-) TimerEvent: {}
+[17.838177] (-) TimerEvent: {}
+[17.939009] (-) TimerEvent: {}
+[18.039860] (-) TimerEvent: {}
+[18.140945] (-) TimerEvent: {}
+[18.241820] (-) TimerEvent: {}
+[18.342641] (-) TimerEvent: {}
+[18.443393] (-) TimerEvent: {}
+[18.544518] (-) TimerEvent: {}
+[18.645542] (-) TimerEvent: {}
+[18.746354] (-) TimerEvent: {}
+[18.847247] (-) TimerEvent: {}
+[18.948680] (-) TimerEvent: {}
+[19.056176] (-) TimerEvent: {}
+[19.159781] (-) TimerEvent: {}
+[19.260594] (-) TimerEvent: {}
+[19.361421] (-) TimerEvent: {}
+[19.462297] (-) TimerEvent: {}
+[19.563122] (-) TimerEvent: {}
+[19.664421] (-) TimerEvent: {}
+[19.765563] (-) TimerEvent: {}
+[19.868896] (-) TimerEvent: {}
+[19.969920] (-) TimerEvent: {}
+[20.070709] (-) TimerEvent: {}
+[20.171469] (-) TimerEvent: {}
+[20.272356] (-) TimerEvent: {}
+[20.373257] (-) TimerEvent: {}
+[20.474078] (-) TimerEvent: {}
+[20.575244] (-) TimerEvent: {}
+[20.676063] (-) TimerEvent: {}
+[20.776871] (-) TimerEvent: {}
+[20.877697] (-) TimerEvent: {}
+[20.978584] (-) TimerEvent: {}
+[21.079326] (-) TimerEvent: {}
+[21.180051] (-) TimerEvent: {}
+[21.284164] (-) TimerEvent: {}
+[21.385274] (-) TimerEvent: {}
+[21.486222] (-) TimerEvent: {}
+[21.587027] (-) TimerEvent: {}
+[21.688326] (-) TimerEvent: {}
+[21.789123] (-) TimerEvent: {}
+[21.889959] (-) TimerEvent: {}
+[21.990900] (-) TimerEvent: {}
+[22.092486] (-) TimerEvent: {}
+[22.193498] (-) TimerEvent: {}
+[22.294317] (-) TimerEvent: {}
+[22.395157] (-) TimerEvent: {}
+[22.495969] (-) TimerEvent: {}
+[22.596782] (-) TimerEvent: {}
+[22.697615] (-) TimerEvent: {}
+[22.798462] (-) TimerEvent: {}
+[22.899285] (-) TimerEvent: {}
+[23.022943] (-) TimerEvent: {}
+[23.124498] (-) TimerEvent: {}
+[23.225266] (-) TimerEvent: {}
+[23.326126] (-) TimerEvent: {}
+[23.427529] (-) TimerEvent: {}
+[23.528484] (-) TimerEvent: {}
+[23.629296] (-) TimerEvent: {}
+[23.730029] (-) TimerEvent: {}
+[23.830785] (-) TimerEvent: {}
+[23.931929] (-) TimerEvent: {}
+[24.032719] (-) TimerEvent: {}
+[24.133524] (-) TimerEvent: {}
+[24.234599] (-) TimerEvent: {}
+[24.335343] (-) TimerEvent: {}
+[24.444642] (-) TimerEvent: {}
+[24.546061] (-) TimerEvent: {}
+[24.647109] (-) TimerEvent: {}
+[24.748519] (-) TimerEvent: {}
+[24.849631] (-) TimerEvent: {}
+[24.950445] (-) TimerEvent: {}
+[25.051241] (-) TimerEvent: {}
+[25.152387] (-) TimerEvent: {}
+[25.253185] (-) TimerEvent: {}
+[25.354023] (-) TimerEvent: {}
+[25.455089] (-) TimerEvent: {}
+[25.556574] (-) TimerEvent: {}
+[25.657381] (-) TimerEvent: {}
+[25.758215] (-) TimerEvent: {}
+[25.859184] (-) TimerEvent: {}
+[25.967660] (-) TimerEvent: {}
+[26.069229] (-) TimerEvent: {}
+[26.170631] (-) TimerEvent: {}
+[26.271422] (-) TimerEvent: {}
+[26.372169] (-) TimerEvent: {}
+[26.472935] (-) TimerEvent: {}
+[26.573818] (-) TimerEvent: {}
+[26.674538] (-) TimerEvent: {}
+[26.775262] (-) TimerEvent: {}
+[26.876514] (-) TimerEvent: {}
+[26.977255] (-) TimerEvent: {}
+[27.078121] (-) TimerEvent: {}
+[27.178946] (-) TimerEvent: {}
+[27.279830] (-) TimerEvent: {}
+[27.380635] (-) TimerEvent: {}
+[27.481473] (-) TimerEvent: {}
+[27.582335] (-) TimerEvent: {}
+[27.683622] (-) TimerEvent: {}
+[27.784555] (-) TimerEvent: {}
+[27.885383] (-) TimerEvent: {}
+[27.986215] (-) TimerEvent: {}
+[28.087096] (-) TimerEvent: {}
+[28.187920] (-) TimerEvent: {}
+[28.288720] (-) TimerEvent: {}
+[28.389604] (-) TimerEvent: {}
+[28.490401] (-) TimerEvent: {}
+[28.591340] (-) TimerEvent: {}
+[28.692560] (-) TimerEvent: {}
+[28.793367] (-) TimerEvent: {}
+[28.894206] (-) TimerEvent: {}
+[28.995023] (-) TimerEvent: {}
+[29.095980] (-) TimerEvent: {}
+[29.196839] (-) TimerEvent: {}
+[29.297667] (-) TimerEvent: {}
+[29.403549] (-) TimerEvent: {}
+[29.504562] (-) TimerEvent: {}
+[29.605418] (-) TimerEvent: {}
+[29.706278] (-) TimerEvent: {}
+[29.807231] (-) TimerEvent: {}
+[29.908135] (-) TimerEvent: {}
+[30.008945] (-) TimerEvent: {}
+[30.109839] (-) TimerEvent: {}
+[30.211263] (-) TimerEvent: {}
+[30.312370] (-) TimerEvent: {}
+[30.413234] (-) TimerEvent: {}
+[30.514132] (-) TimerEvent: {}
+[30.614961] (-) TimerEvent: {}
+[30.716504] (-) TimerEvent: {}
+[30.819072] (-) TimerEvent: {}
+[30.919872] (-) TimerEvent: {}
+[31.020895] (-) TimerEvent: {}
+[31.121766] (-) TimerEvent: {}
+[31.222658] (-) TimerEvent: {}
+[31.323479] (-) TimerEvent: {}
+[31.424408] (-) TimerEvent: {}
+[31.525364] (-) TimerEvent: {}
+[31.626513] (-) TimerEvent: {}
+[31.727310] (-) TimerEvent: {}
+[31.833289] (-) TimerEvent: {}
+[31.936091] (-) TimerEvent: {}
+[32.036915] (-) TimerEvent: {}
+[32.138111] (-) TimerEvent: {}
+[32.243538] (-) TimerEvent: {}
+[32.346542] (-) TimerEvent: {}
+[32.451614] (-) TimerEvent: {}
+[32.555571] (-) TimerEvent: {}
+[32.667570] (-) TimerEvent: {}
+[32.771576] (-) TimerEvent: {}
+[32.879528] (-) TimerEvent: {}
+[32.980327] (-) TimerEvent: {}
+[33.081141] (-) TimerEvent: {}
+[33.187595] (-) TimerEvent: {}
+[33.288333] (-) TimerEvent: {}
+[33.391524] (-) TimerEvent: {}
+[33.495546] (-) TimerEvent: {}
+[33.599583] (-) TimerEvent: {}
+[33.703569] (-) TimerEvent: {}
+[33.807580] (-) TimerEvent: {}
+[33.913540] (-) TimerEvent: {}
+[34.014377] (-) TimerEvent: {}
+[34.115236] (-) TimerEvent: {}
+[34.216054] (-) TimerEvent: {}
+[34.317039] (-) TimerEvent: {}
+[34.417928] (-) TimerEvent: {}
+[34.518728] (-) TimerEvent: {}
+[34.621669] (-) TimerEvent: {}
+[34.724373] (-) TimerEvent: {}
+[34.827519] (-) TimerEvent: {}
+[34.928860] (-) TimerEvent: {}
+[35.029709] (-) TimerEvent: {}
+[35.135510] (-) TimerEvent: {}
+[35.239565] (-) TimerEvent: {}
+[35.343570] (-) TimerEvent: {}
+[35.451556] (-) TimerEvent: {}
+[35.559551] (-) TimerEvent: {}
+[35.663605] (-) TimerEvent: {}
+[35.764403] (-) TimerEvent: {}
+[35.865376] (-) TimerEvent: {}
+[35.966258] (-) TimerEvent: {}
+[36.067065] (-) TimerEvent: {}
+[36.168425] (-) TimerEvent: {}
+[36.269223] (-) TimerEvent: {}
+[36.370044] (-) TimerEvent: {}
+[36.470880] (-) TimerEvent: {}
+[36.572623] (-) TimerEvent: {}
+[36.673626] (-) TimerEvent: {}
+[36.774515] (-) TimerEvent: {}
+[36.875489] (-) TimerEvent: {}
+[36.976773] (-) TimerEvent: {}
+[37.077511] (-) TimerEvent: {}
+[37.178263] (-) TimerEvent: {}
+[37.279122] (-) TimerEvent: {}
+[37.380008] (-) TimerEvent: {}
+[37.480736] (-) TimerEvent: {}
+[37.581600] (-) TimerEvent: {}
+[37.682605] (-) TimerEvent: {}
+[37.783456] (-) TimerEvent: {}
+[37.884321] (-) TimerEvent: {}
+[37.985159] (-) TimerEvent: {}
+[38.085987] (-) TimerEvent: {}
+[38.186759] (-) TimerEvent: {}
+[38.287993] (-) TimerEvent: {}
+[38.388827] (-) TimerEvent: {}
+[38.489782] (-) TimerEvent: {}
+[38.590635] (-) TimerEvent: {}
+[38.691384] (-) TimerEvent: {}
+[38.792108] (-) TimerEvent: {}
+[38.892854] (-) TimerEvent: {}
+[38.993669] (-) TimerEvent: {}
+[39.100321] (-) TimerEvent: {}
+[39.203746] (-) TimerEvent: {}
+[39.304559] (-) TimerEvent: {}
+[39.405356] (-) TimerEvent: {}
+[39.506190] (-) TimerEvent: {}
+[39.607031] (-) TimerEvent: {}
+[39.710647] (-) TimerEvent: {}
+[39.813863] (-) TimerEvent: {}
+[39.914937] (-) TimerEvent: {}
+[40.016181] (-) TimerEvent: {}
+[40.117002] (-) TimerEvent: {}
+[40.219222] (-) TimerEvent: {}
+[40.323497] (-) TimerEvent: {}
+[40.424266] (-) TimerEvent: {}
+[40.526383] (-) TimerEvent: {}
+[40.630631] (-) TimerEvent: {}
+[40.731755] (-) TimerEvent: {}
+[40.832580] (-) TimerEvent: {}
+[40.933506] (-) TimerEvent: {}
+[41.034388] (-) TimerEvent: {}
+[41.135315] (-) TimerEvent: {}
+[41.236568] (-) TimerEvent: {}
+[41.337469] (-) TimerEvent: {}
+[41.438745] (-) TimerEvent: {}
+[41.540168] (-) TimerEvent: {}
+[41.641006] (-) TimerEvent: {}
+[41.741918] (-) TimerEvent: {}
+[41.842774] (-) TimerEvent: {}
+[41.943808] (-) TimerEvent: {}
+[42.044301] (-) TimerEvent: {}
+[42.145601] (-) TimerEvent: {}
+[42.247588] (-) TimerEvent: {}
+[42.351563] (-) TimerEvent: {}
+[42.463553] (-) TimerEvent: {}
+[42.567583] (-) TimerEvent: {}
+[42.673701] (-) TimerEvent: {}
+[42.779611] (-) TimerEvent: {}
+[42.880910] (-) TimerEvent: {}
+[42.987596] (-) TimerEvent: {}
+[43.088713] (-) TimerEvent: {}
+[43.189555] (-) TimerEvent: {}
+[43.290388] (-) TimerEvent: {}
+[43.391277] (-) TimerEvent: {}
+[43.492806] (-) TimerEvent: {}
+[43.595622] (-) TimerEvent: {}
+[43.696793] (-) TimerEvent: {}
+[43.798055] (-) TimerEvent: {}
+[43.899489] (-) TimerEvent: {}
+[44.000551] (-) TimerEvent: {}
+[44.101531] (-) TimerEvent: {}
+[44.202420] (-) TimerEvent: {}
+[44.303237] (-) TimerEvent: {}
+[44.403942] (-) TimerEvent: {}
+[44.504674] (-) TimerEvent: {}
+[44.605455] (-) TimerEvent: {}
+[44.709316] (-) TimerEvent: {}
+[44.810648] (-) TimerEvent: {}
+[44.911739] (-) TimerEvent: {}
+[44.983490] (turtlesim) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable turtlesim_node\x1b[0m\n'}
+[45.015622] (-) TimerEvent: {}
+[45.116792] (-) TimerEvent: {}
+[45.217260] (-) TimerEvent: {}
+[45.320544] (-) TimerEvent: {}
+[45.426491] (-) TimerEvent: {}
+[45.535479] (-) TimerEvent: {}
+[45.639567] (-) TimerEvent: {}
+[45.749088] (-) TimerEvent: {}
+[45.857922] (-) TimerEvent: {}
+[45.958707] (-) TimerEvent: {}
+[46.067531] (-) TimerEvent: {}
+[46.171534] (-) TimerEvent: {}
+[46.278910] (-) TimerEvent: {}
+[46.380463] (-) TimerEvent: {}
+[46.490192] (-) TimerEvent: {}
+[46.595530] (-) TimerEvent: {}
+[46.696339] (-) TimerEvent: {}
+[46.819505] (-) TimerEvent: {}
+[46.920384] (-) TimerEvent: {}
+[47.021303] (-) TimerEvent: {}
+[47.127513] (-) TimerEvent: {}
+[47.235540] (-) TimerEvent: {}
+[47.336382] (-) TimerEvent: {}
+[47.444579] (-) TimerEvent: {}
+[47.552186] (-) TimerEvent: {}
+[47.653070] (-) TimerEvent: {}
+[47.754051] (-) TimerEvent: {}
+[47.859526] (-) TimerEvent: {}
+[47.960719] (-) TimerEvent: {}
+[48.061667] (-) TimerEvent: {}
+[48.166101] (-) TimerEvent: {}
+[48.266980] (-) TimerEvent: {}
+[48.372029] (-) TimerEvent: {}
+[48.472785] (-) TimerEvent: {}
+[48.573562] (-) TimerEvent: {}
+[48.674364] (-) TimerEvent: {}
+[48.775288] (-) TimerEvent: {}
+[48.876397] (-) TimerEvent: {}
+[48.977280] (-) TimerEvent: {}
+[49.083572] (-) TimerEvent: {}
+[49.186970] (-) TimerEvent: {}
+[49.292664] (-) TimerEvent: {}
+[49.395000] (-) TimerEvent: {}
+[49.496129] (-) TimerEvent: {}
+[49.597299] (-) TimerEvent: {}
+[49.698264] (-) TimerEvent: {}
+[49.799135] (-) TimerEvent: {}
+[49.900056] (-) TimerEvent: {}
+[50.000952] (-) TimerEvent: {}
+[50.107645] (-) TimerEvent: {}
+[50.215531] (-) TimerEvent: {}
+[50.316888] (-) TimerEvent: {}
+[50.418015] (-) TimerEvent: {}
+[50.519204] (-) TimerEvent: {}
+[50.620583] (-) TimerEvent: {}
+[50.727080] (-) TimerEvent: {}
+[50.828553] (-) TimerEvent: {}
+[50.929362] (-) TimerEvent: {}
+[51.030186] (-) TimerEvent: {}
+[51.131157] (-) TimerEvent: {}
+[51.232433] (-) TimerEvent: {}
+[51.333814] (-) TimerEvent: {}
+[51.434666] (-) TimerEvent: {}
+[51.535412] (-) TimerEvent: {}
+[51.636139] (-) TimerEvent: {}
+[51.736896] (-) TimerEvent: {}
+[51.837689] (-) TimerEvent: {}
+[51.938500] (-) TimerEvent: {}
+[52.039209] (-) TimerEvent: {}
+[52.139982] (-) TimerEvent: {}
+[52.240676] (-) TimerEvent: {}
+[52.341465] (-) TimerEvent: {}
+[52.427187] (turtlesim) StdoutLine: {'line': b'[ 97%] Built target turtlesim_node\n'}
+[52.441661] (-) TimerEvent: {}
+[52.542375] (-) TimerEvent: {}
+[52.620182] (turtlesim) StdoutLine: {'line': b'[100%] Built target turtlesim__rosidl_typesupport_c__pyext\n'}
+[52.651515] (-) TimerEvent: {}
+[52.724607] (turtlesim) CommandEnded: {'returncode': 0}
+[52.763558] (-) TimerEvent: {}
+[52.864380] (-) TimerEvent: {}
+[52.965261] (-) TimerEvent: {}
+[53.080010] (-) TimerEvent: {}
+[53.180779] (-) TimerEvent: {}
+[53.281798] (-) TimerEvent: {}
+[53.387657] (-) TimerEvent: {}
+[53.488420] (-) TimerEvent: {}
+[53.589477] (-) TimerEvent: {}
+[53.694320] (-) TimerEvent: {}
+[53.796527] (-) TimerEvent: {}
+[53.900104] (-) TimerEvent: {}
+[54.000890] (-) TimerEvent: {}
+[54.101551] (-) TimerEvent: {}
+[54.134765] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'install'}
+[54.211972] (-) TimerEvent: {}
+[54.247718] (turtlesim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/build/turtlesim'], 'cwd': '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/build/turtlesim', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'marangoni'), ('SSH_AGENT_PID', '1559'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_composition/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/marangoni'), ('OLDPWD', '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1349'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'marangoni'), ('JOURNAL_STREAM', '8:36415'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'marangoni'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/marangoni-VirtualBox:@/tmp/.ICE-unix/1603,unix/marangoni-VirtualBox:/tmp/.ICE-unix/1603'), ('INVOCATION_ID', '4997cdf2260643148fc3887d6c248857'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/79376eab_b31f_47df_bb6a_e4300f5d9c5e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.93'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_subscriber:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_service:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_publisher:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_action_server:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_action_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_executors:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_timer:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_subscriber:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_service:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_publisher:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_composition:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_server:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/build/turtlesim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_subscriber:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_service:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_service/lib/python3.8/site-packages:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_publisher:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_client/lib/python3.8/site-packages:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_action_server:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_action_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_action_client/lib/python3.8/site-packages:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_executors:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_executors/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_timer:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_subscriber:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_service:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_publisher:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_composition:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_server:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_subscriber:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_service:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_publisher:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_action_server:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_action_client:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_executors:/opt/ros/foxy')]), 'shell': False}
+[54.313083] (-) TimerEvent: {}
+[54.333561] (turtlesim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[54.335291] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/ament_index/resource_index/rosidl_interfaces/turtlesim\n'}
+[54.336355] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim\n'}
+[54.337164] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[54.338029] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[54.338952] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__functions.h\n'}
+[54.339831] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__functions.c\n'}
+[54.340766] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__type_support.h\n'}
+[54.349916] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__struct.h\n'}
+[54.351266] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/rotate_absolute.h\n'}
+[54.352256] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[54.353245] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[54.354408] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__functions.h\n'}
+[54.355393] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__type_support.h\n'}
+[54.356617] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__struct.h\n'}
+[54.358576] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__type_support.h\n'}
+[54.360861] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__functions.c\n'}
+[54.364139] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__functions.c\n'}
+[54.366755] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__struct.h\n'}
+[54.369307] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__functions.h\n'}
+[54.370643] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/color.h\n'}
+[54.371759] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/pose.h\n'}
+[54.373109] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/rosidl_generator_c__visibility_control.h\n'}
+[54.375298] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[54.378085] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[54.381296] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__type_support.h\n'}
+[54.384680] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__functions.c\n'}
+[54.385991] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__functions.h\n'}
+[54.386857] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__functions.h\n'}
+[54.387836] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__struct.h\n'}
+[54.389090] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__functions.c\n'}
+[54.390574] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__functions.c\n'}
+[54.392746] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__struct.h\n'}
+[54.395245] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__functions.c\n'}
+[54.398874] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__struct.h\n'}
+[54.401055] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__functions.h\n'}
+[54.403130] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__functions.c\n'}
+[54.403765] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__struct.h\n'}
+[54.404599] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__struct.h\n'}
+[54.405797] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__functions.h\n'}
+[54.406936] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__functions.h\n'}
+[54.408914] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__type_support.h\n'}
+[54.411925] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__type_support.h\n'}
+[54.414374] (-) TimerEvent: {}
+[54.417004] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__type_support.h\n'}
+[54.418792] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__type_support.h\n'}
+[54.419657] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/kill.h\n'}
+[54.420540] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/set_pen.h\n'}
+[54.422479] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/teleport_relative.h\n'}
+[54.423006] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/spawn.h\n'}
+[54.424083] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/teleport_absolute.h\n'}
+[54.426317] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/environment/library_path.sh\n'}
+[54.430448] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/environment/library_path.dsv\n'}
+[54.432332] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_generator_c.so\n'}
+[54.434215] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim\n'}
+[54.440676] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[54.447273] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[54.451265] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_fastrtps_c.h\n'}
+[54.461125] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[54.462682] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[54.467963] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__rosidl_typesupport_fastrtps_c.h\n'}
+[54.469412] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__rosidl_typesupport_fastrtps_c.h\n'}
+[54.469892] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[54.470391] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[54.471882] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[54.476744] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_fastrtps_c.h\n'}
+[54.481512] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__rosidl_typesupport_fastrtps_c.h\n'}
+[54.483638] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__rosidl_typesupport_fastrtps_c.h\n'}
+[54.489001] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__rosidl_typesupport_fastrtps_c.h\n'}
+[54.490275] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_fastrtps_c.h\n'}
+[54.491941] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_fastrtps_c.so\n'}
+[54.496687] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim\n'}
+[54.503655] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[54.505148] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[54.506228] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[54.513330] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail/dds_fastrtps\n'}
+[54.515217] (-) TimerEvent: {}
+[54.516648] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[54.525615] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[54.529343] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[54.531652] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[54.535638] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/dds_fastrtps\n'}
+[54.537273] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[54.538276] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[54.540436] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[54.548236] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[54.552350] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[54.555539] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[54.564840] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[54.565625] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[54.571815] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/dds_fastrtps\n'}
+[54.573156] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_fastrtps_cpp.so\n'}
+[54.573890] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim\n'}
+[54.575755] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[54.576731] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[54.581425] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__type_support.c\n'}
+[54.582249] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_introspection_c.h\n'}
+[54.583792] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[54.588035] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[54.589749] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__rosidl_typesupport_introspection_c.h\n'}
+[54.590252] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__type_support.c\n'}
+[54.590745] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__type_support.c\n'}
+[54.595554] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__rosidl_typesupport_introspection_c.h\n'}
+[54.596139] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[54.596618] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[54.597156] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[54.602168] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__rosidl_typesupport_introspection_c.h\n'}
+[54.602660] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__rosidl_typesupport_introspection_c.h\n'}
+[54.603934] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__type_support.c\n'}
+[54.604433] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__type_support.c\n'}
+[54.611836] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_introspection_c.h\n'}
+[54.612345] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_introspection_c.h\n'}
+[54.615830] (-) TimerEvent: {}
+[54.616283] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__rosidl_typesupport_introspection_c.h\n'}
+[54.616801] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__type_support.c\n'}
+[54.617276] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__type_support.c\n'}
+[54.617771] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__type_support.c\n'}
+[54.618240] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_introspection_c.so\n'}
+[54.618722] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_c.so\n'}
+[54.619186] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim\n'}
+[54.619720] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[54.620189] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[54.627084] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__struct.hpp\n'}
+[54.632530] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__builder.hpp\n'}
+[54.633036] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__traits.hpp\n'}
+[54.633531] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/rotate_absolute.hpp\n'}
+[54.634002] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[54.634492] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[54.634958] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__struct.hpp\n'}
+[54.635479] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__traits.hpp\n'}
+[54.635942] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__builder.hpp\n'}
+[54.638121] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__builder.hpp\n'}
+[54.638657] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__traits.hpp\n'}
+[54.645064] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__struct.hpp\n'}
+[54.645694] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/pose.hpp\n'}
+[54.646195] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/color.hpp\n'}
+[54.648046] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[54.648548] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/kill.hpp\n'}
+[54.649043] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[54.649535] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__builder.hpp\n'}
+[54.650023] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__struct.hpp\n'}
+[54.656144] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__builder.hpp\n'}
+[54.660252] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__traits.hpp\n'}
+[54.660671] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__traits.hpp\n'}
+[54.660917] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__builder.hpp\n'}
+[54.661162] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__struct.hpp\n'}
+[54.661404] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__traits.hpp\n'}
+[54.661663] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__traits.hpp\n'}
+[54.661904] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__struct.hpp\n'}
+[54.662144] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__builder.hpp\n'}
+[54.662379] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__struct.hpp\n'}
+[54.662628] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__traits.hpp\n'}
+[54.662862] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__builder.hpp\n'}
+[54.663134] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__struct.hpp\n'}
+[54.663386] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/set_pen.hpp\n'}
+[54.676207] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/teleport_relative.hpp\n'}
+[54.676704] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/spawn.hpp\n'}
+[54.677201] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/teleport_absolute.hpp\n'}
+[54.677672] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim\n'}
+[54.678227] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action\n'}
+[54.684041] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail\n'}
+[54.684546] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_introspection_cpp.hpp\n'}
+[54.685049] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__type_support.cpp\n'}
+[54.691904] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg\n'}
+[54.692432] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail\n'}
+[54.692926] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__type_support.cpp\n'}
+[54.693399] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__type_support.cpp\n'}
+[54.693944] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/color__rosidl_typesupport_introspection_cpp.hpp\n'}
+[54.694412] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/msg/detail/pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[54.694906] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv\n'}
+[54.703367] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail\n'}
+[54.703974] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__type_support.cpp\n'}
+[54.707809] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__type_support.cpp\n'}
+[54.708338] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_introspection_cpp.hpp\n'}
+[54.708814] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__type_support.cpp\n'}
+[54.709303] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__rosidl_typesupport_introspection_cpp.hpp\n'}
+[54.709794] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/spawn__rosidl_typesupport_introspection_cpp.hpp\n'}
+[54.710473] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__rosidl_typesupport_introspection_cpp.hpp\n'}
+[54.710946] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/kill__type_support.cpp\n'}
+[54.711474] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/set_pen__type_support.cpp\n'}
+[54.711948] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_introspection_cpp.hpp\n'}
+[54.712444] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_introspection_cpp.so\n'}
+[54.712960] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_cpp.so\n'}
+[54.719786] (-) TimerEvent: {}
+[54.723944] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/environment/pythonpath.sh\n'}
+[54.724508] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/environment/pythonpath.dsv\n'}
+[54.725006] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/__init__.py\n'}
+[54.819926] (-) TimerEvent: {}
+[54.929668] (-) TimerEvent: {}
+[55.042682] (-) TimerEvent: {}
+[55.108464] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/action\n'}
+[55.109636] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/action/_rotate_absolute.py\n'}
+[55.112197] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/action/__init__.py\n'}
+[55.113640] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/action/_rotate_absolute_s.c\n'}
+[55.131998] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg\n'}
+[55.133330] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/__init__.py\n'}
+[55.134228] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/_pose_s.c\n'}
+[55.148487] (-) TimerEvent: {}
+[55.159562] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/_color.py\n'}
+[55.161109] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/_color_s.c\n'}
+[55.175544] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/_pose.py\n'}
+[55.176148] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv\n'}
+[55.176795] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/__init__.py\n'}
+[55.181453] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_set_pen.py\n'}
+[55.192360] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_teleport_relative_s.c\n'}
+[55.192679] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_teleport_absolute_s.c\n'}
+[55.192929] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_kill.py\n'}
+[55.193173] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_kill_s.c\n'}
+[55.193415] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_teleport_absolute.py\n'}
+[55.193676] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_set_pen_s.c\n'}
+[55.193911] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_teleport_relative.py\n'}
+[55.194178] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_spawn.py\n'}
+[55.194413] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_spawn_s.c\n'}
+[55.223836] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[55.248652] (-) TimerEvent: {}
+[55.265061] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[55.280463] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/python3.8/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[55.287300] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/libturtlesim__python.so\n'}
+[55.295631] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/action/RotateAbsolute.idl\n'}
+[55.296822] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/msg/Color.idl\n'}
+[55.297809] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/msg/Pose.idl\n'}
+[55.299595] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/Kill.idl\n'}
+[55.303597] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/SetPen.idl\n'}
+[55.305608] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/Spawn.idl\n'}
+[55.306676] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute.idl\n'}
+[55.311591] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative.idl\n'}
+[55.316100] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/action/RotateAbsolute.action\n'}
+[55.317140] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/msg/Color.msg\n'}
+[55.318081] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/msg/Pose.msg\n'}
+[55.319546] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/Kill.srv\n'}
+[55.320800] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/Kill_Request.msg\n'}
+[55.327480] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/Kill_Response.msg\n'}
+[55.328498] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/SetPen.srv\n'}
+[55.329550] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/SetPen_Request.msg\n'}
+[55.331361] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/SetPen_Response.msg\n'}
+[55.332819] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/Spawn.srv\n'}
+[55.334093] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/Spawn_Request.msg\n'}
+[55.336612] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/Spawn_Response.msg\n'}
+[55.338756] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute.srv\n'}
+[55.339767] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute_Request.msg\n'}
+[55.343134] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute_Response.msg\n'}
+[55.344163] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative.srv\n'}
+[55.351539] (-) TimerEvent: {}
+[55.352407] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative_Request.msg\n'}
+[55.353338] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative_Response.msg\n'}
+[55.355242] (turtlesim) StdoutLine: {'line': b'-- Installing: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/turtlesim/turtlesim_node\n'}
+[55.443729] (turtlesim) StdoutLine: {'line': b'-- Set runtime path of "/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/turtlesim/turtlesim_node" to ""\n'}
+[55.451753] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/turtlesim/turtle_teleop_key\n'}
+[55.452376] (-) TimerEvent: {}
+[55.455853] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/turtlesim/draw_square\n'}
+[55.461599] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/lib/turtlesim/mimic\n'}
+[55.464231] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/images\n'}
+[55.468043] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/images/dashing.png\n'}
+[55.468930] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/images/foxy.png\n'}
+[55.469711] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/images/bouncy.png\n'}
+[55.470515] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/images/ardent.png\n'}
+[55.471308] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/images/crystal.png\n'}
+[55.476036] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/images/eloquent.png\n'}
+[55.477027] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/launch\n'}
+[55.478193] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/launch/multisim.launch.py\n'}
+[55.481597] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/ament_index/resource_index/package_run_dependencies/turtlesim\n'}
+[55.483628] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/ament_index/resource_index/parent_prefix_path/turtlesim\n'}
+[55.487946] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/environment/ament_prefix_path.sh\n'}
+[55.492750] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/environment/ament_prefix_path.dsv\n'}
+[55.493920] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/environment/path.sh\n'}
+[55.494871] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/environment/path.dsv\n'}
+[55.504219] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/local_setup.bash\n'}
+[55.508006] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/local_setup.sh\n'}
+[55.509078] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/local_setup.zsh\n'}
+[55.510126] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/local_setup.dsv\n'}
+[55.515661] (turtlesim) StdoutLine: {'line': b'-- Installing: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/package.dsv\n'}
+[55.521842] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/ament_index/resource_index/packages/turtlesim\n'}
+[55.523303] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_generator_cExport.cmake\n'}
+[55.524581] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_generator_cExport-noconfig.cmake\n'}
+[55.528436] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cExport.cmake\n'}
+[55.533243] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[55.537507] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cExport.cmake\n'}
+[55.538584] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[55.549746] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_generator_cppExport.cmake\n'}
+[55.551260] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[55.552409] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[55.552915] (-) TimerEvent: {}
+[55.557413] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cppExport.cmake\n'}
+[55.559592] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[55.568324] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake-extras.cmake\n'}
+[55.569329] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[55.570250] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[55.571215] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[55.581690] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[55.582911] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[55.583911] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[55.585093] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesimConfig.cmake\n'}
+[55.585887] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesimConfig-version.cmake\n'}
+[55.586835] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/install/turtlesim/share/turtlesim/package.xml\n'}
+[55.607533] (turtlesim) CommandEnded: {'returncode': 0}
+[55.655522] (-) TimerEvent: {}
+[55.757166] (-) TimerEvent: {}
+[55.860775] (-) TimerEvent: {}
+[55.963530] (-) TimerEvent: {}
+[56.067618] (-) TimerEvent: {}
+[56.168333] (-) TimerEvent: {}
+[56.275759] (-) TimerEvent: {}
+[56.379984] (-) TimerEvent: {}
+[56.480796] (-) TimerEvent: {}
+[56.587499] (-) TimerEvent: {}
+[56.688453] (-) TimerEvent: {}
+[56.791904] (-) TimerEvent: {}
+[56.896331] (-) TimerEvent: {}
+[56.997307] (-) TimerEvent: {}
+[57.101467] (-) TimerEvent: {}
+[57.203918] (-) TimerEvent: {}
+[57.312465] (-) TimerEvent: {}
+[57.416777] (-) TimerEvent: {}
+[57.517572] (-) TimerEvent: {}
+[57.623518] (-) TimerEvent: {}
+[57.628381] (turtlesim) JobEnded: {'identifier': 'turtlesim', 'rc': 0}
+[57.634334] (-) EventReactorShutdown: {}

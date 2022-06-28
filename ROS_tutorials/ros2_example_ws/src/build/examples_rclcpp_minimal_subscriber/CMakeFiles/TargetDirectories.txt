@@ -1,0 +1,12 @@
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_subscriber/CMakeFiles/edit_cache.dir
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_subscriber/CMakeFiles/test.dir
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_subscriber/CMakeFiles/install/strip.dir
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_subscriber/CMakeFiles/subscriber_not_composable.dir
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_subscriber/CMakeFiles/subscriber_member_function.dir
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_subscriber/CMakeFiles/install/local.dir
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_subscriber/CMakeFiles/subscriber_lambda.dir
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_subscriber/CMakeFiles/install.dir
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_subscriber/CMakeFiles/list_install_components.dir
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_subscriber/CMakeFiles/rebuild_cache.dir
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_subscriber/CMakeFiles/examples_rclcpp_minimal_subscriber_uninstall.dir
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_subscriber/CMakeFiles/uninstall.dir
