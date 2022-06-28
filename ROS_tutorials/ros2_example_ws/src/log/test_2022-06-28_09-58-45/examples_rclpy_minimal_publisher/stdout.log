@@ -1,0 +1,14 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.8.10, pytest-4.6.9, py-1.8.1, pluggy-0.13.0
+cachedir: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_publisher/.pytest_cache
+rootdir: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/examples/rclpy, inifile: pytest.ini
+plugins: ament-pep257-0.9.6, launch-testing-ros-0.11.6, ament-lint-0.9.6, launch-testing-0.10.8, ament-copyright-0.9.6, ament-flake8-0.9.6, ament-xmllint-0.9.6, cov-2.8.1, colcon-core-0.9.0
+[1mcollecting ... [0m[1m
+collecting 0 items                                                             [0m[1m
+collected 3 items                                                              [0m
+
+test/test_copyright.py [32m.[0m[36m                                                 [ 33%][0m
+test/test_flake8.py [32m.[0m[36m                                                    [ 66%][0m
+test/test_pep257.py [32m.[0m[36m                                                    [100%][0m
+- generated xml file: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_publisher/pytest.xml -
+[33m[1m===================== 3 passed, 1 warnings in 1.39 seconds =====================[0m

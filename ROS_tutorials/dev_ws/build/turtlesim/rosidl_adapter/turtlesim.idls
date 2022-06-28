@@ -1,0 +1,8 @@
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/build/turtlesim/rosidl_adapter/turtlesim:action/RotateAbsolute.idl
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Color.idl
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Pose.idl
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Kill.idl
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/SetPen.idl
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Spawn.idl
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportAbsolute.idl
+/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/dev_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportRelative.idl

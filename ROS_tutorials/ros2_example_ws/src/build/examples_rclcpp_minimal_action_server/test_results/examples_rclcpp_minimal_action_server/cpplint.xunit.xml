@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="examples_rclcpp_minimal_action_server.cpplint"
+  tests="2"
+  failures="0"
+  errors="0"
+  time="0.228"
+>
+  <testcase
+    name="/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/examples/rclcpp/actions/minimal_action_server/member_functions.cpp"
+    classname="examples_rclcpp_minimal_action_server.cpplint"/>
+  <testcase
+    name="/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/examples/rclcpp/actions/minimal_action_server/not_composable.cpp"
+    classname="examples_rclcpp_minimal_action_server.cpplint"/>
+  <system-out>Checked files:
+* /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/examples/rclcpp/actions/minimal_action_server/member_functions.cpp
+* /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/examples/rclcpp/actions/minimal_action_server/not_composable.cpp</system-out>
+</testsuite>

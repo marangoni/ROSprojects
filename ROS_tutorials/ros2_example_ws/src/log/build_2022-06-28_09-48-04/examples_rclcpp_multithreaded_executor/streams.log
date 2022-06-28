@@ -1,0 +1,77 @@
+[0.063s] Invoking command in '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_multithreaded_executor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/examples/rclcpp/executors/multithreaded_executor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor
+[0.641s] -- The C compiler identification is GNU 9.4.0
+[1.103s] -- The CXX compiler identification is GNU 9.4.0
+[1.139s] -- Check for working C compiler: /usr/bin/cc
+[1.624s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.633s] -- Detecting C compiler ABI info
+[2.119s] -- Detecting C compiler ABI info - done
+[2.295s] -- Detecting C compile features
+[2.297s] -- Detecting C compile features - done
+[2.341s] -- Check for working CXX compiler: /usr/bin/c++
+[3.239s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.251s] -- Detecting CXX compiler ABI info
+[3.982s] -- Detecting CXX compiler ABI info - done
+[4.115s] -- Detecting CXX compile features
+[4.123s] -- Detecting CXX compile features - done
+[4.144s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[4.290s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.291s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.439s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.679s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[6.143s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.239s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[6.789s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[6.896s] -- Found FastRTPS: /opt/ros/foxy/include  
+[7.200s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.500s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[7.507s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.510s] -- Looking for pthread.h
+[7.979s] -- Looking for pthread.h - found
+[7.983s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.603s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[8.611s] -- Looking for pthread_create in pthreads
+[9.163s] -- Looking for pthread_create in pthreads - not found
+[9.165s] -- Looking for pthread_create in pthread
+[9.778s] -- Looking for pthread_create in pthread - found
+[9.791s] -- Found Threads: TRUE  
+[11.507s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[12.011s] -- Added test 'copyright' to check source files copyright and LICENSE
+[12.019s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[12.020s] -- Configured cppcheck include dirs: 
+[12.020s] -- Configured cppcheck exclude dirs and/or files: 
+[12.027s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[12.028s] -- Configured cpplint exclude dirs and/or files: 
+[12.035s] -- Added test 'lint_cmake' to check CMake code style
+[12.041s] -- Added test 'uncrustify' to check C / C++ code style
+[12.042s] -- Configured uncrustify additional arguments: 
+[12.048s] -- Added test 'xmllint' to check XML markup files
+[12.072s] -- Configuring done
+[12.135s] -- Generating done
+[12.160s] -- Build files have been written to: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_multithreaded_executor
+[12.197s] Invoked command in '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_multithreaded_executor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/examples/rclcpp/executors/multithreaded_executor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor
+[12.204s] Invoking command in '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_multithreaded_executor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_multithreaded_executor -- -j1 -l1
+[12.534s] [35m[1mScanning dependencies of target multithreaded_executor[0m
+[12.979s] [ 50%] [32mBuilding CXX object CMakeFiles/multithreaded_executor.dir/multithreaded_executor.cpp.o[0m
+[34.725s] [100%] [32m[1mLinking CXX executable multithreaded_executor[0m
+[36.225s] [100%] Built target multithreaded_executor
+[36.287s] Invoked command in '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_multithreaded_executor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_multithreaded_executor -- -j1 -l1
+[36.434s] Invoking command in '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_multithreaded_executor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_multithreaded_executor
+[36.489s] -- Install configuration: ""
+[36.493s] -- Execute custom install script
+[36.496s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor/lib/examples_rclcpp_multithreaded_executor/multithreaded_executor
+[36.522s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_multithreaded_executor
+[36.548s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_multithreaded_executor
+[36.590s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/environment/ament_prefix_path.sh
+[36.671s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/environment/ament_prefix_path.dsv
+[36.733s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/environment/path.sh
+[36.789s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/environment/path.dsv
+[36.841s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/local_setup.bash
+[36.899s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/local_setup.sh
+[36.951s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/local_setup.zsh
+[37.005s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/local_setup.dsv
+[37.057s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/package.dsv
+[37.115s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor/share/ament_index/resource_index/packages/examples_rclcpp_multithreaded_executor
+[37.189s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/cmake/examples_rclcpp_multithreaded_executorConfig.cmake
+[37.269s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/cmake/examples_rclcpp_multithreaded_executorConfig-version.cmake
+[37.339s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/package.xml
+[37.408s] Invoked command in '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_multithreaded_executor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_multithreaded_executor

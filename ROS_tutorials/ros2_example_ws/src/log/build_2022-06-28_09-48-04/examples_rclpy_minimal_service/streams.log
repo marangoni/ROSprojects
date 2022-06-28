@@ -1,0 +1,26 @@
+[3.604s] Invoking command in '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_service': PYTHONPATH=/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_service/prefix_override:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_service/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_service/build --no-deps install_data
+[4.459s] running develop
+[4.908s] running egg_info
+[4.909s] creating examples_rclpy_minimal_service.egg-info
+[4.909s] writing examples_rclpy_minimal_service.egg-info/PKG-INFO
+[4.910s] writing dependency_links to examples_rclpy_minimal_service.egg-info/dependency_links.txt
+[4.911s] writing entry points to examples_rclpy_minimal_service.egg-info/entry_points.txt
+[4.912s] writing requirements to examples_rclpy_minimal_service.egg-info/requires.txt
+[4.912s] writing top-level names to examples_rclpy_minimal_service.egg-info/top_level.txt
+[4.916s] writing manifest file 'examples_rclpy_minimal_service.egg-info/SOURCES.txt'
+[5.118s] reading manifest file 'examples_rclpy_minimal_service.egg-info/SOURCES.txt'
+[5.125s] writing manifest file 'examples_rclpy_minimal_service.egg-info/SOURCES.txt'
+[5.451s] running build_ext
+[5.454s] Creating /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_service/lib/python3.8/site-packages/site.py
+[5.479s] Creating /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_service/lib/python3.8/site-packages/examples-rclpy-minimal-service.egg-link (link to .)
+[5.483s] Installing service script to /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_service/lib/examples_rclpy_minimal_service
+[5.490s] Installing service_member_function script to /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_service/lib/examples_rclpy_minimal_service
+[5.491s] 
+[5.494s] Installed /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_service
+[5.495s] running install_data
+[5.495s] creating /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_service/share/ament_index
+[5.496s] creating /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_service/share/ament_index/resource_index
+[5.498s] creating /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_service/share/ament_index/resource_index/packages
+[5.502s] copying resource/examples_rclpy_minimal_service -> /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_service/share/ament_index/resource_index/packages
+[5.503s] copying package.xml -> /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_service/share/examples_rclpy_minimal_service
+[5.740s] Invoked command in '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_service' returned '0': PYTHONPATH=/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_service/prefix_override:/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclpy_minimal_service/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclpy_minimal_service/build --no-deps install_data

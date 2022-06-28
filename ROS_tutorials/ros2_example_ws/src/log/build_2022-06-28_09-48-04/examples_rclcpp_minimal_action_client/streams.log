@@ -1,0 +1,94 @@
+[0.159s] Invoking command in '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_action_client': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/examples/rclcpp/actions/minimal_action_client -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client
+[1.038s] -- The C compiler identification is GNU 9.4.0
+[1.615s] -- The CXX compiler identification is GNU 9.4.0
+[1.659s] -- Check for working C compiler: /usr/bin/cc
+[2.087s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.092s] -- Detecting C compiler ABI info
+[2.643s] -- Detecting C compiler ABI info - done
+[2.807s] -- Detecting C compile features
+[2.814s] -- Detecting C compile features - done
+[2.836s] -- Check for working CXX compiler: /usr/bin/c++
+[3.522s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.534s] -- Detecting CXX compiler ABI info
+[4.267s] -- Detecting CXX compiler ABI info - done
+[4.434s] -- Detecting CXX compile features
+[4.437s] -- Detecting CXX compile features - done
+[4.466s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[4.628s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.630s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.455s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.616s] -- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+[5.813s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.848s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[6.156s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[6.360s] -- Found FastRTPS: /opt/ros/foxy/include  
+[6.758s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.680s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[7.962s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[7.972s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.979s] -- Looking for pthread.h
+[8.603s] -- Looking for pthread.h - found
+[8.610s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[9.186s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[9.190s] -- Looking for pthread_create in pthreads
+[9.746s] -- Looking for pthread_create in pthreads - not found
+[9.753s] -- Looking for pthread_create in pthread
+[10.316s] -- Looking for pthread_create in pthread - found
+[10.334s] -- Found Threads: TRUE  
+[11.682s] -- Found rclcpp_action: 2.4.1 (/opt/ros/foxy/share/rclcpp_action/cmake)
+[11.912s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[12.315s] -- Added test 'copyright' to check source files copyright and LICENSE
+[12.330s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[12.342s] -- Configured cppcheck include dirs: 
+[12.343s] -- Configured cppcheck exclude dirs and/or files: 
+[12.353s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[12.354s] -- Configured cpplint exclude dirs and/or files: 
+[12.370s] -- Added test 'lint_cmake' to check CMake code style
+[12.381s] -- Added test 'uncrustify' to check C / C++ code style
+[12.382s] -- Configured uncrustify additional arguments: 
+[12.394s] -- Added test 'xmllint' to check XML markup files
+[12.438s] -- Configuring done
+[12.734s] -- Generating done
+[12.758s] -- Build files have been written to: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_action_client
+[12.815s] Invoked command in '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_action_client' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/examples/rclcpp/actions/minimal_action_client -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client
+[12.817s] Invoking command in '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_action_client': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_action_client -- -j1 -l1
+[13.095s] [35m[1mScanning dependencies of target action_client_not_composable_with_cancel[0m
+[13.630s] [ 12%] [32mBuilding CXX object CMakeFiles/action_client_not_composable_with_cancel.dir/not_composable_with_cancel.cpp.o[0m
+[29.296s] [ 25%] [32m[1mLinking CXX executable action_client_not_composable_with_cancel[0m
+[30.622s] [ 25%] Built target action_client_not_composable_with_cancel
+[30.706s] [35m[1mScanning dependencies of target action_client_not_composable[0m
+[31.080s] [ 37%] [32mBuilding CXX object CMakeFiles/action_client_not_composable.dir/not_composable.cpp.o[0m
+[44.650s] [ 50%] [32m[1mLinking CXX executable action_client_not_composable[0m
+[45.810s] [ 50%] Built target action_client_not_composable
+[45.841s] [35m[1mScanning dependencies of target action_client_not_composable_with_feedback[0m
+[46.240s] [ 62%] [32mBuilding CXX object CMakeFiles/action_client_not_composable_with_feedback.dir/not_composable_with_feedback.cpp.o[0m
+[59.406s] [ 75%] [32m[1mLinking CXX executable action_client_not_composable_with_feedback[0m
+[60.522s] [ 75%] Built target action_client_not_composable_with_feedback
+[60.583s] [35m[1mScanning dependencies of target action_client_member_functions[0m
+[60.959s] [ 87%] [32mBuilding CXX object CMakeFiles/action_client_member_functions.dir/member_functions.cpp.o[0m
+[75.071s] [100%] [32m[1mLinking CXX executable action_client_member_functions[0m
+[76.280s] [100%] Built target action_client_member_functions
+[76.318s] Invoked command in '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_action_client' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_action_client -- -j1 -l1
+[76.520s] Invoking command in '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_action_client': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_action_client
+[76.550s] -- Install configuration: ""
+[76.566s] -- Execute custom install script
+[76.568s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_member_functions
+[76.632s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_not_composable
+[76.693s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_not_composable_with_cancel
+[76.745s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_not_composable_with_feedback
+[76.818s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_action_client
+[76.890s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_action_client
+[76.946s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/environment/ament_prefix_path.sh
+[77.017s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/environment/ament_prefix_path.dsv
+[77.075s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/environment/path.sh
+[77.133s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/environment/path.dsv
+[77.196s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/local_setup.bash
+[77.254s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/local_setup.sh
+[77.323s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/local_setup.zsh
+[77.458s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/local_setup.dsv
+[77.517s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/package.dsv
+[77.584s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/share/ament_index/resource_index/packages/examples_rclcpp_minimal_action_client
+[77.644s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/cmake/examples_rclcpp_minimal_action_clientConfig.cmake
+[77.714s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/cmake/examples_rclcpp_minimal_action_clientConfig-version.cmake
+[77.766s] -- Symlinking: /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/package.xml
+[77.842s] Invoked command in '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_action_client' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_action_client
