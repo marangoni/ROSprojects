@@ -1,0 +1,8 @@
+prefix=/home/luiz/catkin_ws/install
+
+Name: robot
+Description: Description of robot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
