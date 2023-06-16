@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="jkprobot" type="jpk.py" name="jpk_robot_node" output="screen" />
+</launch>

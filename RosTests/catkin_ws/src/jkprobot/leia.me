@@ -1,0 +1,26 @@
+Como conectar o raspberrypi ao PC
+
+1) conectar o raspberrypi a rede e verificar o ip (usar ifconfigs)
+
+2) ssh ubuntu@endereço_ip
+
+ssh nuria@192.168.68.62 
+
+3) ssh usuario: nuria senha: nuria
+
+4) para salvar a senha do ssh e nao precisar mais digitar
+
+- no terminal do linux no pc digitar: ssh-id-copy nuria@192.168.68.62
+- informar a senha
+
+Como rodar o ROS entre multiplas máquinas
+
+1) Determinar o ip do computador que irá rodar o master (exemplo: raspyPC 192.168.68.62)
+
+2) No terminal do raspyPC executar: export ROS_MASTER_URI=http://192.168.68.62:11311
+
+3) Executar os comandos do ROS no terminal normalmente (executar: source devel/setup.bash)
+
+4) Abrir o terminal nos outros PCs, executar: export ROS_MASTER_URI=http://192.168.68.62:11311
+
+5) executar source devel/setup.bash e executar os comandos normalmente
