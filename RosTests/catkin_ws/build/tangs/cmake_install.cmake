@@ -1,8 +1,8 @@
-# Install script for directory: /home/luiz/RosTests/catkin_ws/src/tangs
+# Install script for directory: /home/luiz/ROSprojects/RosTests/catkin_ws/src/tangs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/luiz/RosTests/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/luiz/ROSprojects/RosTests/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/luiz/RosTests/catkin_ws/build/tangs/catkin_generated/installspace/tangs.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/luiz/ROSprojects/RosTests/catkin_ws/build/tangs/catkin_generated/installspace/tangs.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tangs/cmake" TYPE FILE FILES
-    "/home/luiz/RosTests/catkin_ws/build/tangs/catkin_generated/installspace/tangsConfig.cmake"
-    "/home/luiz/RosTests/catkin_ws/build/tangs/catkin_generated/installspace/tangsConfig-version.cmake"
+    "/home/luiz/ROSprojects/RosTests/catkin_ws/build/tangs/catkin_generated/installspace/tangsConfig.cmake"
+    "/home/luiz/ROSprojects/RosTests/catkin_ws/build/tangs/catkin_generated/installspace/tangsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tangs" TYPE FILE FILES "/home/luiz/RosTests/catkin_ws/src/tangs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tangs" TYPE FILE FILES "/home/luiz/ROSprojects/RosTests/catkin_ws/src/tangs/package.xml")
 endif()
 

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/luiz/RosTests/catkin_ws/devel/include/jkprobot/Ardubot.h"
+  "/home/luiz/ROSprojects/RosTests/catkin_ws/devel/include/jkprobot/Ardubot.h"
   "CMakeFiles/jkprobot_generate_messages_cpp"
 )
 

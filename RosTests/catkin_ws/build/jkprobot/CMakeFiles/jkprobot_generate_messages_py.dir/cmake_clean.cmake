@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/luiz/RosTests/catkin_ws/devel/lib/python3/dist-packages/jkprobot/msg/_Ardubot.py"
-  "/home/luiz/RosTests/catkin_ws/devel/lib/python3/dist-packages/jkprobot/msg/__init__.py"
+  "/home/luiz/ROSprojects/RosTests/catkin_ws/devel/lib/python3/dist-packages/jkprobot/msg/_Ardubot.py"
+  "/home/luiz/ROSprojects/RosTests/catkin_ws/devel/lib/python3/dist-packages/jkprobot/msg/__init__.py"
   "CMakeFiles/jkprobot_generate_messages_py"
 )
 

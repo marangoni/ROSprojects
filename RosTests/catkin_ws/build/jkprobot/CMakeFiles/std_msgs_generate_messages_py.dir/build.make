@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luiz/RosTests/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/luiz/ROSprojects/RosTests/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luiz/RosTests/catkin_ws/build
+CMAKE_BINARY_DIR = /home/luiz/ROSprojects/RosTests/catkin_ws/build
 
 # Utility rule file for std_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ jkprobot/CMakeFiles/std_msgs_generate_messages_py.dir/build: std_msgs_generate_m
 .PHONY : jkprobot/CMakeFiles/std_msgs_generate_messages_py.dir/build
 
 jkprobot/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	cd /home/luiz/RosTests/catkin_ws/build/jkprobot && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build/jkprobot && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : jkprobot/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 jkprobot/CMakeFiles/std_msgs_generate_messages_py.dir/depend:
-	cd /home/luiz/RosTests/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luiz/RosTests/catkin_ws/src /home/luiz/RosTests/catkin_ws/src/jkprobot /home/luiz/RosTests/catkin_ws/build /home/luiz/RosTests/catkin_ws/build/jkprobot /home/luiz/RosTests/catkin_ws/build/jkprobot/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luiz/ROSprojects/RosTests/catkin_ws/src /home/luiz/ROSprojects/RosTests/catkin_ws/src/jkprobot /home/luiz/ROSprojects/RosTests/catkin_ws/build /home/luiz/ROSprojects/RosTests/catkin_ws/build/jkprobot /home/luiz/ROSprojects/RosTests/catkin_ws/build/jkprobot/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : jkprobot/CMakeFiles/std_msgs_generate_messages_py.dir/depend
 

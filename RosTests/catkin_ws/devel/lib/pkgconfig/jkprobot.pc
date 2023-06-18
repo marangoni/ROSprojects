@@ -1,8 +1,8 @@
-prefix=/home/luiz/RosTests/catkin_ws/devel
+prefix=/home/luiz/ROSprojects/RosTests/catkin_ws/devel
 
 Name: jkprobot
 Description: Description of jkprobot
 Version: 0.0.0
-Cflags: -I/home/luiz/RosTests/catkin_ws/devel/include
+Cflags: -I/home/luiz/ROSprojects/RosTests/catkin_ws/devel/include
 Libs: -L${prefix}/lib 
 Requires: message_generation rospy std_msgs

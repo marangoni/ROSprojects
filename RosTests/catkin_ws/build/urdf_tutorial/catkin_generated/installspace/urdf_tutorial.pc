@@ -1,4 +1,4 @@
-prefix=/home/luiz/RosTests/catkin_ws/install
+prefix=/home/luiz/ROSprojects/RosTests/catkin_ws/install
 
 Name: urdf_tutorial
 Description: Description of urdf_tutorial
