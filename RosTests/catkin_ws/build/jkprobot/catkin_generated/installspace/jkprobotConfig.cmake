@@ -67,14 +67,14 @@ set(jkprobot_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(jkprobot_SOURCE_PREFIX /home/luiz/RosTests/catkin_ws/src/jkprobot)
-  set(jkprobot_DEVEL_PREFIX /home/luiz/RosTests/catkin_ws/devel)
+  set(jkprobot_SOURCE_PREFIX /home/luiz/ROSprojects/RosTests/catkin_ws/src/jkprobot)
+  set(jkprobot_DEVEL_PREFIX /home/luiz/ROSprojects/RosTests/catkin_ws/devel)
   set(jkprobot_INSTALL_PREFIX "")
   set(jkprobot_PREFIX ${jkprobot_DEVEL_PREFIX})
 else()
   set(jkprobot_SOURCE_PREFIX "")
   set(jkprobot_DEVEL_PREFIX "")
-  set(jkprobot_INSTALL_PREFIX /home/luiz/RosTests/catkin_ws/install)
+  set(jkprobot_INSTALL_PREFIX /home/luiz/ROSprojects/RosTests/catkin_ws/install)
   set(jkprobot_PREFIX ${jkprobot_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/luiz/RosTests/catkin_ws/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/luiz/ROSprojects/RosTests/catkin_ws/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

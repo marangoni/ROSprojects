@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/luiz/RosTests/catkin_ws/devel/share/roseus/ros/jkprobot/manifest.l"
-  "/home/luiz/RosTests/catkin_ws/devel/share/roseus/ros/jkprobot/msg/Ardubot.l"
+  "/home/luiz/ROSprojects/RosTests/catkin_ws/devel/share/roseus/ros/jkprobot/manifest.l"
+  "/home/luiz/ROSprojects/RosTests/catkin_ws/devel/share/roseus/ros/jkprobot/msg/Ardubot.l"
   "CMakeFiles/jkprobot_generate_messages_eus"
 )
 

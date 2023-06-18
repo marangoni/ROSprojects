@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/luiz/RosTests/catkin_ws/devel/share/gennodejs/ros/jkprobot/msg/Ardubot.js"
+  "/home/luiz/ROSprojects/RosTests/catkin_ws/devel/share/gennodejs/ros/jkprobot/msg/Ardubot.js"
   "CMakeFiles/jkprobot_generate_messages_nodejs"
 )
 

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/luiz/RosTests/catkin_ws/devel/share/common-lisp/ros/jkprobot/msg/Ardubot.lisp"
+  "/home/luiz/ROSprojects/RosTests/catkin_ws/devel/share/common-lisp/ros/jkprobot/msg/Ardubot.lisp"
   "CMakeFiles/jkprobot_generate_messages_lisp"
 )
 

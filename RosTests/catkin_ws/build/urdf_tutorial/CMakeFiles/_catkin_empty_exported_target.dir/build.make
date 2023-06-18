@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luiz/RosTests/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/luiz/ROSprojects/RosTests/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luiz/RosTests/catkin_ws/build
+CMAKE_BINARY_DIR = /home/luiz/ROSprojects/RosTests/catkin_ws/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ urdf_tutorial/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_empty_
 .PHONY : urdf_tutorial/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 urdf_tutorial/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/luiz/RosTests/catkin_ws/build/urdf_tutorial && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build/urdf_tutorial && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : urdf_tutorial/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 urdf_tutorial/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/luiz/RosTests/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luiz/RosTests/catkin_ws/src /home/luiz/RosTests/catkin_ws/src/urdf_tutorial /home/luiz/RosTests/catkin_ws/build /home/luiz/RosTests/catkin_ws/build/urdf_tutorial /home/luiz/RosTests/catkin_ws/build/urdf_tutorial/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luiz/ROSprojects/RosTests/catkin_ws/src /home/luiz/ROSprojects/RosTests/catkin_ws/src/urdf_tutorial /home/luiz/ROSprojects/RosTests/catkin_ws/build /home/luiz/ROSprojects/RosTests/catkin_ws/build/urdf_tutorial /home/luiz/ROSprojects/RosTests/catkin_ws/build/urdf_tutorial/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : urdf_tutorial/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/luiz/RosTests/catkin_ws/src/urdf_tutorial
+# Install script for directory: /home/luiz/ROSprojects/RosTests/catkin_ws/src/urdf_tutorial
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/luiz/RosTests/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/luiz/ROSprojects/RosTests/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,27 +38,27 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/luiz/RosTests/catkin_ws/build/urdf_tutorial/catkin_generated/installspace/urdf_tutorial.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/luiz/ROSprojects/RosTests/catkin_ws/build/urdf_tutorial/catkin_generated/installspace/urdf_tutorial.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_tutorial/cmake" TYPE FILE FILES
-    "/home/luiz/RosTests/catkin_ws/build/urdf_tutorial/catkin_generated/installspace/urdf_tutorialConfig.cmake"
-    "/home/luiz/RosTests/catkin_ws/build/urdf_tutorial/catkin_generated/installspace/urdf_tutorialConfig-version.cmake"
+    "/home/luiz/ROSprojects/RosTests/catkin_ws/build/urdf_tutorial/catkin_generated/installspace/urdf_tutorialConfig.cmake"
+    "/home/luiz/ROSprojects/RosTests/catkin_ws/build/urdf_tutorial/catkin_generated/installspace/urdf_tutorialConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_tutorial" TYPE FILE FILES "/home/luiz/RosTests/catkin_ws/src/urdf_tutorial/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_tutorial" TYPE FILE FILES "/home/luiz/ROSprojects/RosTests/catkin_ws/src/urdf_tutorial/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_tutorial" TYPE DIRECTORY FILES
-    "/home/luiz/RosTests/catkin_ws/src/urdf_tutorial/images"
-    "/home/luiz/RosTests/catkin_ws/src/urdf_tutorial/meshes"
-    "/home/luiz/RosTests/catkin_ws/src/urdf_tutorial/launch"
-    "/home/luiz/RosTests/catkin_ws/src/urdf_tutorial/rviz"
-    "/home/luiz/RosTests/catkin_ws/src/urdf_tutorial/urdf"
+    "/home/luiz/ROSprojects/RosTests/catkin_ws/src/urdf_tutorial/images"
+    "/home/luiz/ROSprojects/RosTests/catkin_ws/src/urdf_tutorial/meshes"
+    "/home/luiz/ROSprojects/RosTests/catkin_ws/src/urdf_tutorial/launch"
+    "/home/luiz/ROSprojects/RosTests/catkin_ws/src/urdf_tutorial/rviz"
+    "/home/luiz/ROSprojects/RosTests/catkin_ws/src/urdf_tutorial/urdf"
     )
 endif()
 
