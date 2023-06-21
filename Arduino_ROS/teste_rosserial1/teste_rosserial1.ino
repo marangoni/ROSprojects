@@ -24,7 +24,6 @@ Servo base_servo;
 Servo waist_servo;
 Servo shoulder_servo;
 
-//void servo_cb( const std_msgs::UInt32& cmd_msg){
 void servo_cb( const jkprobot::Ardubot& cmd_msg){
   //set servo angle, should be from 0-180 
   base_servo.write(cmd_msg.base_deg);
@@ -39,6 +38,7 @@ void servo_cb( const jkprobot::Ardubot& cmd_msg){
 
 
 ros::Subscriber<jkprobot::Ardubot> sub("servo_move", servo_cb);
+//ros::Subscriber<jkprobot::Ardubot> sub("button", servo_cb);
 
 //std_msgs::UInt16 pos_msg;
 //ros::Publisher chatter("position", &pos_msg);
