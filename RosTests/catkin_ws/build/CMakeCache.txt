@@ -467,6 +467,9 @@ gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 //Value Computed by CMake
 jkprobot_BINARY_DIR:STATIC=/home/luiz/ROSprojects/RosTests/catkin_ws/build/jkprobot
 
+//The directory containing a CMake configuration file for jkprobot.
+jkprobot_DIR:PATH=/home/luiz/ROSprojects/RosTests/catkin_ws/devel/share/jkprobot/cmake
+
 //Value Computed by CMake
 jkprobot_SOURCE_DIR:STATIC=/home/luiz/ROSprojects/RosTests/catkin_ws/src/jkprobot
 
