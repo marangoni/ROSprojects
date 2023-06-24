@@ -27,11 +27,11 @@ Servo shoulder_servo;
 void servo_cb( const jkprobot::Ardubot& cmd_msg){
   //set servo angle, should be from 0-180 
   base_servo.write(cmd_msg.base_deg);
-  delay(5);
+  delay(15);
   waist_servo.write(cmd_msg.waist_deg);
-  delay(5);
+  delay(15);
   shoulder_servo.write(cmd_msg.shoulder_deg);
-  delay(5);
+  delay(15);
  
   digitalWrite(13, HIGH-digitalRead(13));  //toggle led  
 }
