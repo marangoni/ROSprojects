@@ -1,0 +1,85 @@
+Como configurar o Samba para leitura dos arquivos no raspberrypi
+fonte(https://www.arduinoecia.com.br/como-instalar-samba-raspberry-pi/)
+
+#Entrar no raspberrypi com o ssh
+ssh usuario_no_rasp@endereco_ip_hasp
+
+ssh nuria@192.168.68.61
+
+# No RPi
+sudo apt-get update
+sudo apt-get upgrade
+
+#Instalar o pacote samba
+sudo apt-get install samba samba-common-bin
+
+# Alterar a permissão da pasta no RPi que será compartilhada
+chmod 777 /home/nuria
+#alterar o arquivo conf do samba
+sudo nano /etc/samba/smb.conf
+# Inserir no final do arquivo:
+[RPi_dir]
+        comment = Compartilhamento de pasta RPi
+        path = /home/nuria
+        writeable = true
+        create mask = 0777
+        directory mask = 0777
+        public = no
+        browsable = true
+# Obter o IP do RPi (para confirmar)
+hostname -I
+
+No computador que irá acessar o RPi
+# instalar o pacote cifs-utils
+sudo apt-get install cifs-utils
+
+#adicionar autorização para montagem de pastas por todos os usuarios
+sudo visudo
+
+Copie a linha abaixo para depois de %admin ALL=(ALL) ALL
+
+%users   ALL=(ALL) /bin/mount,/bin/umount,/sbin/mount.cifs,/sbin/umount.cifs
+
+#Criar uma pasta no computador local que irá receber a pasta montada
+mkdir ~/mnt
+
+sudo mount -t cifs //192.168.68.61/RPi_dir ~/mnt -o username=nuria,noexec
+
+#atenção: 
+# 1)o endereço ip deve ser o do RPi obtido pelo hostname -I
+# 2) RPi_dir deve ser o nome cadastrado no arquivo smb.conf no RPi
+# 3) /mnt é a pasta local criada
+# 4) username -> usuario criado na instacao do pacote samba
+#
+
+# A partir deste comando a pasta deverá estar acessível no nautilus (ger. arquivos)
+Para desmontar o volume
+sudo umount ~/mnt
+
+# Para realizar a montagem de maneira automatica no logon da máquina local
+Fonte: https://help.ubuntu.com/community/Samba/SambaClientGuide#Ubuntu_Clients
+
+# Criar um arquivo novo de configuração local
+sudo nano /etc/samba/user
+
+# Inserir as linhas abaixo no arquivo
+username=samba_user
+password=samba_user_password
+# Nesse caso:
+username=nuria
+password=nuria
+
+# Mude as permissões para segurança
+sudo chmod 0400 /etc/samba/user
+
+# Crie o diretorio onde quer que a montagem ocorra (se já tiver criado antes ignore)
+sudo mkdir /home/mnt
+
+# Edite o arquivo fstab
+sudo cp /etc/fstab /etc/fstab.bak
+sudo nano /etc/fstab
+
+# Inclua a linha abaixo no final do arquivo:
+//192.168.68.61/RPi_dir /home/mnt  cifs  credentials=/etc/samba/user,noexec  0 0
+
+Nesse ponto a montagem deve ocorrer automaticamente
