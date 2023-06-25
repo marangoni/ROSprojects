@@ -1,2 +1,2 @@
-jkprobot:robogui:robot:tangs:urdf_tutorial
+arduino_control_tutorials:jkprobot:robogui:robot:tangs:urdf_tutorial
 -DCATKIN_DEVEL_PREFIX=/home/luiz/ROSprojects/RosTests/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/luiz/ROSprojects/RosTests/catkin_ws/install -G Unix Makefiles
