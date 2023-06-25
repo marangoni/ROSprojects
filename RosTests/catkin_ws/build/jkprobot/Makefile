@@ -56,29 +56,6 @@ CMAKE_BINARY_DIR = /home/luiz/ROSprojects/RosTests/catkin_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -90,6 +67,18 @@ install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
@@ -112,6 +101,17 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -168,171 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-jkprobot/CMakeFiles/jkprobot_genpy.dir/rule:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/jkprobot_genpy.dir/rule
-.PHONY : jkprobot/CMakeFiles/jkprobot_genpy.dir/rule
-
-# Convenience name for target.
-jkprobot_genpy: jkprobot/CMakeFiles/jkprobot_genpy.dir/rule
-
-.PHONY : jkprobot_genpy
-
-# fast build rule for target.
-jkprobot_genpy/fast:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/jkprobot_genpy.dir/build.make jkprobot/CMakeFiles/jkprobot_genpy.dir/build
-.PHONY : jkprobot_genpy/fast
-
-# Convenience name for target.
-jkprobot/CMakeFiles/jkprobot_generate_messages_py.dir/rule:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/jkprobot_generate_messages_py.dir/rule
-.PHONY : jkprobot/CMakeFiles/jkprobot_generate_messages_py.dir/rule
-
-# Convenience name for target.
-jkprobot_generate_messages_py: jkprobot/CMakeFiles/jkprobot_generate_messages_py.dir/rule
-
-.PHONY : jkprobot_generate_messages_py
-
-# fast build rule for target.
-jkprobot_generate_messages_py/fast:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/jkprobot_generate_messages_py.dir/build.make jkprobot/CMakeFiles/jkprobot_generate_messages_py.dir/build
-.PHONY : jkprobot_generate_messages_py/fast
-
-# Convenience name for target.
-jkprobot/CMakeFiles/jkprobot_gennodejs.dir/rule:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/jkprobot_gennodejs.dir/rule
-.PHONY : jkprobot/CMakeFiles/jkprobot_gennodejs.dir/rule
-
-# Convenience name for target.
-jkprobot_gennodejs: jkprobot/CMakeFiles/jkprobot_gennodejs.dir/rule
-
-.PHONY : jkprobot_gennodejs
-
-# fast build rule for target.
-jkprobot_gennodejs/fast:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/jkprobot_gennodejs.dir/build.make jkprobot/CMakeFiles/jkprobot_gennodejs.dir/build
-.PHONY : jkprobot_gennodejs/fast
-
-# Convenience name for target.
-jkprobot/CMakeFiles/jkprobot_generate_messages_nodejs.dir/rule:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/jkprobot_generate_messages_nodejs.dir/rule
-.PHONY : jkprobot/CMakeFiles/jkprobot_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-jkprobot_generate_messages_nodejs: jkprobot/CMakeFiles/jkprobot_generate_messages_nodejs.dir/rule
-
-.PHONY : jkprobot_generate_messages_nodejs
-
-# fast build rule for target.
-jkprobot_generate_messages_nodejs/fast:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/jkprobot_generate_messages_nodejs.dir/build.make jkprobot/CMakeFiles/jkprobot_generate_messages_nodejs.dir/build
-.PHONY : jkprobot_generate_messages_nodejs/fast
-
-# Convenience name for target.
-jkprobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : jkprobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: jkprobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make jkprobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-jkprobot/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : jkprobot/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: jkprobot/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make jkprobot/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-jkprobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : jkprobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: jkprobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make jkprobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-jkprobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : jkprobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: jkprobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make jkprobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-jkprobot/CMakeFiles/jkprobot_generate_messages_cpp.dir/rule:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/jkprobot_generate_messages_cpp.dir/rule
-.PHONY : jkprobot/CMakeFiles/jkprobot_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-jkprobot_generate_messages_cpp: jkprobot/CMakeFiles/jkprobot_generate_messages_cpp.dir/rule
-
-.PHONY : jkprobot_generate_messages_cpp
-
-# fast build rule for target.
-jkprobot_generate_messages_cpp/fast:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/jkprobot_generate_messages_cpp.dir/build.make jkprobot/CMakeFiles/jkprobot_generate_messages_cpp.dir/build
-.PHONY : jkprobot_generate_messages_cpp/fast
-
-# Convenience name for target.
-jkprobot/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : jkprobot/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: jkprobot/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/std_msgs_generate_messages_py.dir/build.make jkprobot/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-jkprobot/CMakeFiles/jkprobot_generate_messages_lisp.dir/rule:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/jkprobot_generate_messages_lisp.dir/rule
-.PHONY : jkprobot/CMakeFiles/jkprobot_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-jkprobot_generate_messages_lisp: jkprobot/CMakeFiles/jkprobot_generate_messages_lisp.dir/rule
-
-.PHONY : jkprobot_generate_messages_lisp
-
-# fast build rule for target.
-jkprobot_generate_messages_lisp/fast:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/jkprobot_generate_messages_lisp.dir/build.make jkprobot/CMakeFiles/jkprobot_generate_messages_lisp.dir/build
-.PHONY : jkprobot_generate_messages_lisp/fast
-
-# Convenience name for target.
 jkprobot/CMakeFiles/jkprobot_generate_messages.dir/rule:
 	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/jkprobot_generate_messages.dir/rule
 .PHONY : jkprobot/CMakeFiles/jkprobot_generate_messages.dir/rule
@@ -378,6 +213,21 @@ jkprobot_generate_messages_eus/fast:
 .PHONY : jkprobot_generate_messages_eus/fast
 
 # Convenience name for target.
+jkprobot/CMakeFiles/jkprobot_generate_messages_cpp.dir/rule:
+	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/jkprobot_generate_messages_cpp.dir/rule
+.PHONY : jkprobot/CMakeFiles/jkprobot_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+jkprobot_generate_messages_cpp: jkprobot/CMakeFiles/jkprobot_generate_messages_cpp.dir/rule
+
+.PHONY : jkprobot_generate_messages_cpp
+
+# fast build rule for target.
+jkprobot_generate_messages_cpp/fast:
+	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/jkprobot_generate_messages_cpp.dir/build.make jkprobot/CMakeFiles/jkprobot_generate_messages_cpp.dir/build
+.PHONY : jkprobot_generate_messages_cpp/fast
+
+# Convenience name for target.
 jkprobot/CMakeFiles/jkprobot_geneus.dir/rule:
 	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/jkprobot_geneus.dir/rule
 .PHONY : jkprobot/CMakeFiles/jkprobot_geneus.dir/rule
@@ -391,6 +241,21 @@ jkprobot_geneus: jkprobot/CMakeFiles/jkprobot_geneus.dir/rule
 jkprobot_geneus/fast:
 	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/jkprobot_geneus.dir/build.make jkprobot/CMakeFiles/jkprobot_geneus.dir/build
 .PHONY : jkprobot_geneus/fast
+
+# Convenience name for target.
+jkprobot/CMakeFiles/jkprobot_generate_messages_lisp.dir/rule:
+	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/jkprobot_generate_messages_lisp.dir/rule
+.PHONY : jkprobot/CMakeFiles/jkprobot_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+jkprobot_generate_messages_lisp: jkprobot/CMakeFiles/jkprobot_generate_messages_lisp.dir/rule
+
+.PHONY : jkprobot_generate_messages_lisp
+
+# fast build rule for target.
+jkprobot_generate_messages_lisp/fast:
+	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/jkprobot_generate_messages_lisp.dir/build.make jkprobot/CMakeFiles/jkprobot_generate_messages_lisp.dir/build
+.PHONY : jkprobot_generate_messages_lisp/fast
 
 # Convenience name for target.
 jkprobot/CMakeFiles/jkprobot_gencpp.dir/rule:
@@ -422,36 +287,91 @@ jkprobot_genlisp/fast:
 	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/jkprobot_genlisp.dir/build.make jkprobot/CMakeFiles/jkprobot_genlisp.dir/build
 .PHONY : jkprobot_genlisp/fast
 
+# Convenience name for target.
+jkprobot/CMakeFiles/jkprobot_generate_messages_nodejs.dir/rule:
+	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/jkprobot_generate_messages_nodejs.dir/rule
+.PHONY : jkprobot/CMakeFiles/jkprobot_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+jkprobot_generate_messages_nodejs: jkprobot/CMakeFiles/jkprobot_generate_messages_nodejs.dir/rule
+
+.PHONY : jkprobot_generate_messages_nodejs
+
+# fast build rule for target.
+jkprobot_generate_messages_nodejs/fast:
+	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/jkprobot_generate_messages_nodejs.dir/build.make jkprobot/CMakeFiles/jkprobot_generate_messages_nodejs.dir/build
+.PHONY : jkprobot_generate_messages_nodejs/fast
+
+# Convenience name for target.
+jkprobot/CMakeFiles/jkprobot_gennodejs.dir/rule:
+	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/jkprobot_gennodejs.dir/rule
+.PHONY : jkprobot/CMakeFiles/jkprobot_gennodejs.dir/rule
+
+# Convenience name for target.
+jkprobot_gennodejs: jkprobot/CMakeFiles/jkprobot_gennodejs.dir/rule
+
+.PHONY : jkprobot_gennodejs
+
+# fast build rule for target.
+jkprobot_gennodejs/fast:
+	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/jkprobot_gennodejs.dir/build.make jkprobot/CMakeFiles/jkprobot_gennodejs.dir/build
+.PHONY : jkprobot_gennodejs/fast
+
+# Convenience name for target.
+jkprobot/CMakeFiles/jkprobot_generate_messages_py.dir/rule:
+	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/jkprobot_generate_messages_py.dir/rule
+.PHONY : jkprobot/CMakeFiles/jkprobot_generate_messages_py.dir/rule
+
+# Convenience name for target.
+jkprobot_generate_messages_py: jkprobot/CMakeFiles/jkprobot_generate_messages_py.dir/rule
+
+.PHONY : jkprobot_generate_messages_py
+
+# fast build rule for target.
+jkprobot_generate_messages_py/fast:
+	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/jkprobot_generate_messages_py.dir/build.make jkprobot/CMakeFiles/jkprobot_generate_messages_py.dir/build
+.PHONY : jkprobot_generate_messages_py/fast
+
+# Convenience name for target.
+jkprobot/CMakeFiles/jkprobot_genpy.dir/rule:
+	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jkprobot/CMakeFiles/jkprobot_genpy.dir/rule
+.PHONY : jkprobot/CMakeFiles/jkprobot_genpy.dir/rule
+
+# Convenience name for target.
+jkprobot_genpy: jkprobot/CMakeFiles/jkprobot_genpy.dir/rule
+
+.PHONY : jkprobot_genpy
+
+# fast build rule for target.
+jkprobot_genpy/fast:
+	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f jkprobot/CMakeFiles/jkprobot_genpy.dir/build.make jkprobot/CMakeFiles/jkprobot_genpy.dir/build
+.PHONY : jkprobot_genpy/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/local"
-	@echo "... test"
-	@echo "... jkprobot_genpy"
-	@echo "... jkprobot_generate_messages_py"
-	@echo "... jkprobot_gennodejs"
-	@echo "... jkprobot_generate_messages_nodejs"
 	@echo "... install/strip"
-	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... install/local"
 	@echo "... install"
-	@echo "... std_msgs_generate_messages_eus"
 	@echo "... list_install_components"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... jkprobot_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_py"
-	@echo "... jkprobot_generate_messages_lisp"
 	@echo "... jkprobot_generate_messages"
 	@echo "... _jkprobot_generate_messages_check_deps_Ardubot"
 	@echo "... jkprobot_generate_messages_eus"
+	@echo "... jkprobot_generate_messages_cpp"
 	@echo "... jkprobot_geneus"
+	@echo "... jkprobot_generate_messages_lisp"
+	@echo "... test"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... jkprobot_gencpp"
 	@echo "... jkprobot_genlisp"
+	@echo "... jkprobot_generate_messages_nodejs"
+	@echo "... jkprobot_gennodejs"
+	@echo "... jkprobot_generate_messages_py"
+	@echo "... jkprobot_genpy"
 .PHONY : help
 
 

@@ -1,8 +1,0 @@
--- run_test.py: invoking following command in '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/examples/rclcpp/services/minimal_service':
- - /opt/ros/foxy/bin/ament_copyright --xunit-file /home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_service/test_results/examples_rclcpp_minimal_service/copyright.xunit.xml
-
-No problems found, checked 1 files
-
-
--- run_test.py: return code 0
--- run_test.py: verify result file '/home/marangoni/Documents/ROS/ROSprojects/ROS_tutorials/ros2_example_ws/src/build/examples_rclcpp_minimal_service/test_results/examples_rclcpp_minimal_service/copyright.xunit.xml'

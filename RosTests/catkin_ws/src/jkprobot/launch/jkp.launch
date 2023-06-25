@@ -1,3 +1,5 @@
 <launch>
     <node pkg="jkprobot" type="jpk.py" name="jpk_robot_node" output="screen" />
+    <node pkg="robogui" type="firstapp_py" name="jkp_robot_node" output="screen" />
+    
 </launch>
