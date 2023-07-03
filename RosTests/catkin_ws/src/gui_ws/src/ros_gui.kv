@@ -41,7 +41,7 @@ MDFloatLayout:
         pos_hint:{"center_x": .5, "center_y": 0.2}
         on_press: app.my_function(*args)
 
-    MDSlider
+    MDSlider:
         id: servo_base
         min: 0
         max: 180
@@ -55,7 +55,7 @@ MDFloatLayout:
         hint_radius: [6, 0, 6, 0]
         on_touch_up: app.slider_base_function(self.value)
 
-    MDSlider
+    MDSlider:
         id: servo_waist
         min: 0
         max: 180
@@ -69,7 +69,7 @@ MDFloatLayout:
         hint_radius: [6, 0, 6, 0]  
         on_touch_up: app.slider_waist_function(self.value) 
 
-    MDSlider
+    MDSlider:
         id: servo_shoulder
         min: 0
         max: 180

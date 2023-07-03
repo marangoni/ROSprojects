@@ -1,7 +1,7 @@
 {
     "folders": [
         {
-            "path": "../gui_ws"
+            "path": "../gui_ws/src"
         }
     ],
     "settings": {
