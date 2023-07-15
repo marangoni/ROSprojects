@@ -31,7 +31,7 @@ def button_callback(data):
 def listener():
   rospy.init_node('arduino_board')
   rospy.Subscriber("/button", Ardubot, button_callback)
-  #rate = rospy.Rate(2
+  #rate = rospy.Rate(2)
   rospy.spin()
 
 # Enquanto o programa estiver rodando

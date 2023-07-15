@@ -1,0 +1,11 @@
+{
+    
+    // You should store those three in environment variables
+    "onshape_api": "https://cad.onshape.com",
+    "onshape_access_key": "03xbvfGAyluPwSX9fovSdw8W",
+    "onshape_secret_key": "UsWAkvkwbuSHcZEMVu7LvdaKsgN3QNaWAi6UKx080iY1bJIJ",
+
+    "documentId": "d70e38d6ebd1279c132def46",
+    "outputFormat": "urdf",
+    "assemblyName": "Robot"
+}
