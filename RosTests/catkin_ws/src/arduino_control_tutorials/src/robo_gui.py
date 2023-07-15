@@ -43,8 +43,15 @@ class TutorialApp(MDApp):
         msg.waist_deg = 0 # cintura
         msg.shoulder_deg = 0 # ombro
         print('Going to initial position...')
-
         pub.publish(msg)
+        
+        #atualiza posicao dos sliders na gui
+                
+        self.screen.ids.servo_base.value = 0
+        self.screen.ids.servo_waist.value = 0
+        self.screen.ids.servo_shoulder.value = 0
+
+        return 
 
     
     def go_final(self, *args):
@@ -55,6 +62,12 @@ class TutorialApp(MDApp):
                    
         print('Going to final position...')
         pub.publish(msg)
+
+        #atualiza posicao dos sliders na gui
+                
+        self.screen.ids.servo_base.value = 180
+        self.screen.ids.servo_waist.value = 180
+        self.screen.ids.servo_shoulder.value = 180
     
 
     def slider_base_function(self, slider_base_value):
