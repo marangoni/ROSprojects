@@ -68,18 +68,6 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -135,6 +123,18 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # The main all target
 all: cmake_check_build_system
 	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/luiz/ROSprojects/RosTests/catkin_ws/build/CMakeFiles /home/luiz/ROSprojects/RosTests/catkin_ws/build/urdf_tutorial/CMakeFiles/progress.marks
@@ -166,21 +166,6 @@ preinstall/fast:
 depend:
 	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-# Convenience name for target.
-urdf_tutorial/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_tutorial/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : urdf_tutorial/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-# Convenience name for target.
-_catkin_empty_exported_target: urdf_tutorial/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-.PHONY : _catkin_empty_exported_target
-
-# fast build rule for target.
-_catkin_empty_exported_target/fast:
-	cd /home/luiz/ROSprojects/RosTests/catkin_ws/build && $(MAKE) -f urdf_tutorial/CMakeFiles/_catkin_empty_exported_target.dir/build.make urdf_tutorial/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
 
 # Convenience name for target.
 urdf_tutorial/CMakeFiles/run_tests_urdf_tutorial.dir/rule:
@@ -294,8 +279,6 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... _catkin_empty_exported_target"
 	@echo "... run_tests_urdf_tutorial"
 	@echo "... test"
 	@echo "... _run_tests_urdf_tutorial"
@@ -308,6 +291,7 @@ help:
 	@echo "... install"
 	@echo "... _run_tests_urdf_tutorial_roslaunch-check_launch"
 	@echo "... clean_test_results_urdf_tutorial"
+	@echo "... install/local"
 .PHONY : help
 
 
