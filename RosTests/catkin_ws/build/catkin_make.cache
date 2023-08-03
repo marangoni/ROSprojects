@@ -1,2 +1,2 @@
-arduino_control_tutorials:jkprobot:robogui:robot:tangs:urdf_tutorial
+arduino_control_tutorials:gazebo_ros_pkgs/gazebo_dev:gazebo_ros_pkgs/gazebo_msgs:gazebo_ros_pkgs/gazebo_plugins:gazebo_ros_pkgs/gazebo_ros:gazebo_ros_pkgs/gazebo_ros_control:gazebo_ros_pkgs/gazebo_ros_pkgs:jkprobot:robogui:tangs:tangs5dof:urdf_tutorial
 -DCATKIN_DEVEL_PREFIX=/home/luiz/ROSprojects/RosTests/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/luiz/ROSprojects/RosTests/catkin_ws/install -G Unix Makefiles
