@@ -1,0 +1,53 @@
+
+1) Instalar o docker no computador
+   linux - https://docs.docker.com/desktop/install/linux-install/
+
+   windows - https://docs.docker.com/desktop/install/windows-install/
+
+2) Baixar os arquivos ROS no repositorio git
+
+ Se tiver o git bash instalado - git clone https://github.com/marangoni/ROSprojects.git
+
+ Se não tiver o git instalado - https://github.com/marangoni/ROSprojects/archive/refs/heads/main.zip
+
+3) Se não tiver, instalar o VSCODE - https://code.visualstudio.com/download
+
+4) Abrir o diretorio do projeto no VSCODE - File -> Open Folder ... (selecionar a pasta ROSProjects do arquivo git baixado)
+
+5) Se não tiver, instalar a extensão DOCKER no VSCODE - https://code.visualstudio.com/docs/containers/overview
+
+6) Criar a imagem do arquivo com o ROS no computador local
+
+    - No vscode clicar com o botão direito sobre o arquivo Dockerfile -> Build imagem
+    ou
+    - No terminal do windows/linux/ ou terminal dentro do vscode
+    docker image build -t nome_minha_imagem .
+
+7) Verificar a imagem criada com o comando docker images
+
+8) Criar um container interativo (-it) com a imagem criada. Na linha de comando:
+    docker run -it -v $PWD/ROSprojects/RosTests/catkin_ws:/home/work_files/RosTests/catkin_ws/src nome_minha_imagem
+
+9) Deverá ser aberto um terminal interativo do container. Testar os comandos:
+   - ls
+   - roscore
+   - nano
+
+10) A pasta local RosTests deverá estar vinculada ao conteúdo do conteiner em execução. E deverá aparecer no VSCode.
+
+11) Com o container criado, use-o sempre que quiser fazer algum desenvolvimento na programação. O comando
+
+docker container ps -a irá listar todos os containers existentes.
+
+O comando:
+
+docker exec -it nome_container /bash 
+
+irá abrir outros terminais iterativos para desenvolvimento da programação no ROS
+
+
+Referencias:
+ https://youtu.be/SAMPOK_lazw
+ http://wiki.ros.org/docker/Tutorials/Docker
+ https://varhowto.com/install-ros-noetic-docker/
+ https://hub.docker.com/_/ros
