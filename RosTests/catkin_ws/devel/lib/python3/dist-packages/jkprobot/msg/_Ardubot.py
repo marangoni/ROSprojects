@@ -8,14 +8,16 @@ import struct
 
 
 class Ardubot(genpy.Message):
-  _md5sum = "25c6d417204f56ff08c29e46dee18838"
+  _md5sum = "416e94e338a7777f87f98090399f3e9b"
   _type = "jkprobot/Ardubot"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """int32 base_deg
 int32 waist_deg
-int32 shoulder_deg"""
-  __slots__ = ['base_deg','waist_deg','shoulder_deg']
-  _slot_types = ['int32','int32','int32']
+int32 shoulder_deg
+int32 wrist_deg
+int32 grip_deg"""
+  __slots__ = ['base_deg','waist_deg','shoulder_deg','wrist_deg','grip_deg']
+  _slot_types = ['int32','int32','int32','int32','int32']
 
   def __init__(self, *args, **kwds):
     """
@@ -25,7 +27,7 @@ int32 shoulder_deg"""
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       base_deg,waist_deg,shoulder_deg
+       base_deg,waist_deg,shoulder_deg,wrist_deg,grip_deg
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -40,10 +42,16 @@ int32 shoulder_deg"""
         self.waist_deg = 0
       if self.shoulder_deg is None:
         self.shoulder_deg = 0
+      if self.wrist_deg is None:
+        self.wrist_deg = 0
+      if self.grip_deg is None:
+        self.grip_deg = 0
     else:
       self.base_deg = 0
       self.waist_deg = 0
       self.shoulder_deg = 0
+      self.wrist_deg = 0
+      self.grip_deg = 0
 
   def _get_types(self):
     """
@@ -58,7 +66,7 @@ int32 shoulder_deg"""
     """
     try:
       _x = self
-      buff.write(_get_struct_3i().pack(_x.base_deg, _x.waist_deg, _x.shoulder_deg))
+      buff.write(_get_struct_5i().pack(_x.base_deg, _x.waist_deg, _x.shoulder_deg, _x.wrist_deg, _x.grip_deg))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -73,8 +81,8 @@ int32 shoulder_deg"""
       end = 0
       _x = self
       start = end
-      end += 12
-      (_x.base_deg, _x.waist_deg, _x.shoulder_deg,) = _get_struct_3i().unpack(str[start:end])
+      end += 20
+      (_x.base_deg, _x.waist_deg, _x.shoulder_deg, _x.wrist_deg, _x.grip_deg,) = _get_struct_5i().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -88,7 +96,7 @@ int32 shoulder_deg"""
     """
     try:
       _x = self
-      buff.write(_get_struct_3i().pack(_x.base_deg, _x.waist_deg, _x.shoulder_deg))
+      buff.write(_get_struct_5i().pack(_x.base_deg, _x.waist_deg, _x.shoulder_deg, _x.wrist_deg, _x.grip_deg))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -104,8 +112,8 @@ int32 shoulder_deg"""
       end = 0
       _x = self
       start = end
-      end += 12
-      (_x.base_deg, _x.waist_deg, _x.shoulder_deg,) = _get_struct_3i().unpack(str[start:end])
+      end += 20
+      (_x.base_deg, _x.waist_deg, _x.shoulder_deg, _x.wrist_deg, _x.grip_deg,) = _get_struct_5i().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -114,9 +122,9 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_3i = None
-def _get_struct_3i():
-    global _struct_3i
-    if _struct_3i is None:
-        _struct_3i = struct.Struct("<3i")
-    return _struct_3i
+_struct_5i = None
+def _get_struct_5i():
+    global _struct_5i
+    if _struct_5i is None:
+        _struct_5i = struct.Struct("<5i")
+    return _struct_5i
