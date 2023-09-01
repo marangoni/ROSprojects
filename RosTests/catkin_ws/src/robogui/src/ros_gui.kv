@@ -2,46 +2,69 @@ MDFloatLayout:
     radius: [5, 0, 0, 0]
   
     MDLabel:
-        text: "6 DOF Robot Interface Controller"
+        text: "Controlador Robo 5 DOFs"
         halign: "center"
         size_hint: 1, 1
         pos_hint:{"center_x": .5, "center_y": 0.95}
         font_style:"H4"
 
     MDLabel:
-        text: "Servo base - control"
+        text: "Servo cintura"
         halign: "center"
         size_hint: 1, 1
         pos_hint:{"center_x": .5, "center_y": 0.75}
 
     MDLabel:
-        text: "Servo Waist - control"
+        text: "Servo ombro"
         halign: "center"
         size_hint: 1, 1
         pos_hint:{"center_x": .5, "center_y": 0.55}
 
     MDLabel:
-        text: "Servo Shoulder - control"
+        text: "Servo cotovelo"
         halign: "center"
         size_hint: 1, 1
         pos_hint:{"center_x": .5, "center_y": 0.35}
+
+    MDLabel:
+        text: "Servo pulso"
+        halign: "center"
+        size_hint: 1, 1
+        pos_hint:{"center_x": .5, "center_y": 0.15}
 
     MDLabel:
         id:my_label
         text: ""
         halign: "center"
         size_hint: 1, 1
-        pos_hint:{"center_x": .5, "center_y": 0.5}
+        pos_hint:{"center_x": .5, "center_y": 0.05}
 
     MDRaisedButton:
-        text: "Publish!"
+        text: "Mover"
         md_bg_color: "green"
         halign: "center"
         size_hint: 0.15, 0.05
-        pos_hint:{"center_x": .5, "center_y": 0.2}
+        pos_hint:{"center_x": .5, "center_y": 0.05}
         on_press: app.my_function(*args)
 
-    MDSlider
+    MDRaisedButton:
+        text: "Posição referência"
+        md_bg_color: "green"
+        halign: "center"
+        size_hint: 0.15, 0.05
+        pos_hint:{"center_x": .2, "center_y": 0.05}
+        on_press: app.go_initial(*args)
+
+    MDRaisedButton:
+        text: "Posição final"
+        md_bg_color: "green"
+        halign: "center"
+        size_hint: 0.15, 0.05
+        pos_hint:{"center_x": .8, "center_y": 0.05}
+        on_press: app.go_final(*args)
+            
+
+    MDSlider:
         id: servo_base
         min: 0
         max: 180
@@ -55,7 +78,7 @@ MDFloatLayout:
         hint_radius: [6, 0, 6, 0]
         on_touch_up: app.slider_base_function(self.value)
 
-    MDSlider
+    MDSlider:
         id: servo_waist
         min: 0
         max: 180
@@ -69,7 +92,7 @@ MDFloatLayout:
         hint_radius: [6, 0, 6, 0]  
         on_touch_up: app.slider_waist_function(self.value) 
 
-    MDSlider
+    MDSlider:
         id: servo_shoulder
         min: 0
         max: 180
@@ -82,4 +105,18 @@ MDFloatLayout:
         hint_text_color: "white"
         hint_radius: [6, 0, 6, 0]
         on_touch_up: app.slider_shoulder_function(self.value)
+
+    MDSlider:
+        id: servo_wrist
+        min: 0
+        max: 180
+        value: 90
+        hint: True
+        color: "red"
+        size_hint: 0.5, 0.05
+        pos_hint:{"center_x": .5, "center_y": 0.2}
+        hint_bg_color: "red"
+        hint_text_color: "white"
+        hint_radius: [6, 0, 6, 0]
+        on_touch_up: app.slider_wrist_function(self.value)
 

@@ -1,6 +1,6 @@
 <launch>
 
-  <!-- USE: roslaunch tangs5dofs urdf_visualize.launch model:='$(find tangs5dof)/urdf/robot.urdf' -->
+  <!-- USE: roslaunch tangs5dof urdf_visualize.launch model:='$(find tangs5dof)/urdf/robot.urdf' -->
   <arg name="model" default=""/>
 
 

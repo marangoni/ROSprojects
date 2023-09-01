@@ -21,6 +21,8 @@ class Ardubot {
       this.base_deg = null;
       this.waist_deg = null;
       this.shoulder_deg = null;
+      this.wrist_deg = null;
+      this.grip_deg = null;
     }
     else {
       if (initObj.hasOwnProperty('base_deg')) {
@@ -41,6 +43,18 @@ class Ardubot {
       else {
         this.shoulder_deg = 0;
       }
+      if (initObj.hasOwnProperty('wrist_deg')) {
+        this.wrist_deg = initObj.wrist_deg
+      }
+      else {
+        this.wrist_deg = 0;
+      }
+      if (initObj.hasOwnProperty('grip_deg')) {
+        this.grip_deg = initObj.grip_deg
+      }
+      else {
+        this.grip_deg = 0;
+      }
     }
   }
 
@@ -52,6 +66,10 @@ class Ardubot {
     bufferOffset = _serializer.int32(obj.waist_deg, buffer, bufferOffset);
     // Serialize message field [shoulder_deg]
     bufferOffset = _serializer.int32(obj.shoulder_deg, buffer, bufferOffset);
+    // Serialize message field [wrist_deg]
+    bufferOffset = _serializer.int32(obj.wrist_deg, buffer, bufferOffset);
+    // Serialize message field [grip_deg]
+    bufferOffset = _serializer.int32(obj.grip_deg, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -65,11 +83,15 @@ class Ardubot {
     data.waist_deg = _deserializer.int32(buffer, bufferOffset);
     // Deserialize message field [shoulder_deg]
     data.shoulder_deg = _deserializer.int32(buffer, bufferOffset);
+    // Deserialize message field [wrist_deg]
+    data.wrist_deg = _deserializer.int32(buffer, bufferOffset);
+    // Deserialize message field [grip_deg]
+    data.grip_deg = _deserializer.int32(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
-    return 12;
+    return 20;
   }
 
   static datatype() {
@@ -79,7 +101,7 @@ class Ardubot {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '25c6d417204f56ff08c29e46dee18838';
+    return '416e94e338a7777f87f98090399f3e9b';
   }
 
   static messageDefinition() {
@@ -88,6 +110,8 @@ class Ardubot {
     int32 base_deg
     int32 waist_deg
     int32 shoulder_deg
+    int32 wrist_deg
+    int32 grip_deg
     `;
   }
 
@@ -116,6 +140,20 @@ class Ardubot {
     }
     else {
       resolved.shoulder_deg = 0
+    }
+
+    if (msg.wrist_deg !== undefined) {
+      resolved.wrist_deg = msg.wrist_deg;
+    }
+    else {
+      resolved.wrist_deg = 0
+    }
+
+    if (msg.grip_deg !== undefined) {
+      resolved.grip_deg = msg.grip_deg;
+    }
+    else {
+      resolved.grip_deg = 0
     }
 
     return resolved;
