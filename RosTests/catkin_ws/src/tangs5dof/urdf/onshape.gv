@@ -1,0 +1,23 @@
+digraph G {
+node [shape=box];
+"dummy" [label="dummy"];
+"link_base" [label="link_base"];
+"link_body" [label="link_body"];
+"link_arm" [label="link_arm"];
+"link_forearm" [label="link_forearm"];
+"link_hand" [label="link_hand"];
+"link_palm" [label="link_palm"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"dummy" -> "dummy_joint" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"dummy_joint" -> "link_base"
+"link_base" -> "waist" [label="xyz: 5.0307e-17 1.31145e-18 0.056 \nrpy: 2.08167e-15 4.57967e-16 1.54558"]
+"waist" -> "link_body"
+"link_body" -> "shoulder" [label="xyz: -0.004 0.0139653 0.0403016 \nrpy: 0 1.5708 -3.14215"]
+"shoulder" -> "link_arm"
+"link_arm" -> "elbow" [label="xyz: -0.119987 -2.12319e-06 1.73472e-18 \nrpy: 3.14159 -7.88222e-16 0.608864"]
+"elbow" -> "link_forearm"
+"link_forearm" -> "wrist_yaw" [label="xyz: -0.00530822 -0.0897483 -0.00751447 \nrpy: -1.5708 -0.262347 7.93194e-15"]
+"wrist_yaw" -> "link_hand"
+"link_hand" -> "wrist_pitch" [label="xyz: 0.0049814 -0.0140102 -0.0279961 \nrpy: -1.5708 -0.0380808 -5.50306e-15"]
+"wrist_pitch" -> "link_palm"
+}

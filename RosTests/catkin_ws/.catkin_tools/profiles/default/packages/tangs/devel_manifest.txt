@@ -1,0 +1,5 @@
+tangs
+/home/luiz/ROSprojects/RosTests/catkin_ws/devel/.private/tangs/cmake.lock /home/luiz/ROSprojects/RosTests/catkin_ws/devel/./cmake.lock
+/home/luiz/ROSprojects/RosTests/catkin_ws/devel/.private/tangs/lib/pkgconfig/tangs.pc /home/luiz/ROSprojects/RosTests/catkin_ws/devel/lib/pkgconfig/tangs.pc
+/home/luiz/ROSprojects/RosTests/catkin_ws/devel/.private/tangs/share/tangs/cmake/tangsConfig.cmake /home/luiz/ROSprojects/RosTests/catkin_ws/devel/share/tangs/cmake/tangsConfig.cmake
+/home/luiz/ROSprojects/RosTests/catkin_ws/devel/.private/tangs/share/tangs/cmake/tangsConfig-version.cmake /home/luiz/ROSprojects/RosTests/catkin_ws/devel/share/tangs/cmake/tangsConfig-version.cmake
