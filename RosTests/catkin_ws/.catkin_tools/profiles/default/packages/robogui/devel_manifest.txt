@@ -1,0 +1,5 @@
+robogui
+/home/luiz/ROSprojects/RosTests/catkin_ws/devel/.private/robogui/cmake.lock /home/luiz/ROSprojects/RosTests/catkin_ws/devel/./cmake.lock
+/home/luiz/ROSprojects/RosTests/catkin_ws/devel/.private/robogui/lib/pkgconfig/robogui.pc /home/luiz/ROSprojects/RosTests/catkin_ws/devel/lib/pkgconfig/robogui.pc
+/home/luiz/ROSprojects/RosTests/catkin_ws/devel/.private/robogui/share/robogui/cmake/roboguiConfig-version.cmake /home/luiz/ROSprojects/RosTests/catkin_ws/devel/share/robogui/cmake/roboguiConfig-version.cmake
+/home/luiz/ROSprojects/RosTests/catkin_ws/devel/.private/robogui/share/robogui/cmake/roboguiConfig.cmake /home/luiz/ROSprojects/RosTests/catkin_ws/devel/share/robogui/cmake/roboguiConfig.cmake
