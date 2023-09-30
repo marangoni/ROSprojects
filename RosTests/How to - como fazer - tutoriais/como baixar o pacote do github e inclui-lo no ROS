@@ -1,0 +1,39 @@
+#
+# Pre-requisito: ROS noetic deve estar instalado na máquina
+# https://foxglove.dev/blog/installing-ros1-noetic-on-ubuntu
+ Catkin_make instalado na maquina
+
+ 
+
+# 1) Criar o workspace de trabalho do ROS - catkin_ws
+# https://wiki.ros.org/catkin/Tutorials/create_a_workspace
+#
+    - Abra um terminal e digite os comandos abaixo:
+    source /opt/ros/noetic/setup.bash
+    mkdir -p ~/catkin_ws/src
+    cd ~/catkin_ws/
+    catkin_make
+    source devel/setup.bash
+
+#  2) Verificar a instalação
+    echo $ROS_PACKAGE_PATH
+ verifique se a saida é similar a esta: /home/youruser/catkin_ws/src:/opt/ros/kinetic/share
+
+#  3) Mudar para o diretorio /catkin_ws/src (onde sao criados os pacotes no ROS)
+  
+#  4) Baixar do github o pacote do projeto de pesquisa no ROS
+
+#   git clone https://github.com/marangoni/arduino_control_tutorials.git
+
+#  Após este comando a pasta arduino_control_tutorials deve ter sido criada localmente
+#
+#  5) Adicionar o pacote à instalação do ROS
+  cd ~/catkin_ws/
+  catkin_make
+#
+#  6) Conferir a instalação com o comando:
+  rospack list | grep arduino
+#  
+#  A saida esperada deve ter o pacote arduino_control_tutorials
+  arduino_control_tutorials /home/nuria/catkin_ws/src/arduino_control_tutorials
+

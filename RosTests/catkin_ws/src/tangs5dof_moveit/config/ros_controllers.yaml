@@ -1,0 +1,34 @@
+Thangs5dof_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - elbow
+    - shoulder
+    - waist
+    - wrist_yaw
+    - wrist_pitch
+  gains:
+    elbow:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    shoulder:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    waist:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    wrist_yaw:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    wrist_pitch:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1

@@ -5,4 +5,8 @@
           WAIST_DEG
           SHOULDER_DEG-VAL
           SHOULDER_DEG
+          WRIST_DEG-VAL
+          WRIST_DEG
+          GRIP_DEG-VAL
+          GRIP_DEG
 ))

@@ -13,6 +13,8 @@ class TutorialApp(MDApp):
         self.slider_base_angle = 90
         self.slider_waist_angle = 90
         self.slider_shoulder_angle = 90
+        self.slider_wrist_angle = 90
+        self.slider_grip_angle = 90
 
         self.screen = Builder.load_file('ros_gui.kv')
 
@@ -28,6 +30,8 @@ class TutorialApp(MDApp):
         msg.base_deg = self.slider_base_angle # base
         msg.waist_deg = self.slider_waist_angle # cintura
         msg.shoulder_deg = self.slider_shoulder_angle # ombro
+        msg.wrist_deg = self.slider_shoulder_angle # pulso
+        msg.grip_deg = self.slider_shoulder_angle # grip
 
         pub.publish(msg)
 
@@ -42,6 +46,14 @@ class TutorialApp(MDApp):
     def slider_shoulder_function(self, slider_shoulder_value):
         self.slider_shoulder_angle = int(slider_shoulder_value)
         print(self.slider_shoulder_angle)
+
+    def slider_wrist_function(self, slider_wrist_value):
+        self.slider_wrist_angle = int(slider_wrist_value)
+        print(self.slider_wrist_angle)
+
+    def slider_grip_function(self, slider_grip_value):
+        self.slider_grip_angle = int(slider_grip_value)
+        print(self.slider_grip_angle)
 
 
 if __name__=='__main__':
