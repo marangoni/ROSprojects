@@ -2,16 +2,13 @@ controller_list:
   - name: fake_Thangs5dof_controller
     type: $(arg fake_execution_type)
     joints:
-      - elbow
-  - name: fake_arm_controller
-    type: $(arg fake_execution_type)
-    joints:
-      - end_effector
       - waist
-  - name: fake_end_effector_controller
-    type: $(arg fake_execution_type)
-    joints:
-      - end_effector
+      - shoulder
+      - elbow
+      - wrist_yaw
+      - wrist_pitch
 initial:  # Define initial robot poses per group
-  - group: arm
-    pose: Relaxed
+#  - group: Thangs5dof
+#    pose: home
+
+  []
