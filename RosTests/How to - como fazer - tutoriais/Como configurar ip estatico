@@ -1,0 +1,19 @@
+# Como tornar o IP do RPi - fixo
+fonte: https://linuxhint.com/raspberry_pi_static_ip_setup/
+
+#Instalar o pacote
+sudo apt install dhcpcd5
+
+# Editar o arquivo /etc/dhcpcd.conf 
+
+Inserir as linhas abaixo:
+
+interface wlan0
+static ip_address=192.168.68.61
+static routers=192.168.0.1
+static domain_name_servers=192.168.0.1 8.8.8.8
+
+Atenção: substituir static ip_address = pelo endereço desejado
+
+# reiniciar o RPi
+sudo reboot

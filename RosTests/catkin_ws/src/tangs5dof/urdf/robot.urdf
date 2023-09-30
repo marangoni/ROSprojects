@@ -1,195 +1,235 @@
 <robot name="onshape">
-
-<link name="dummy">
-   </link>
-<link name="link_base">
-<visual>
-<origin xyz="-7.3532502849424115608e-65 4.3879474921794448663e-33 -1.6365532380980035014e-49" rpy="1.9428902930940234527e-16 3.7296554733501272411e-17 1.570796326794896558" />
-<geometry>
-<mesh filename="package://tangs5dof/urdf/link_base.stl"/>
-</geometry>
-<material name="link_base_material">
-<color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-7.3532502849424115608e-65 4.3879474921794448663e-33 -1.6365532380980035014e-49" rpy="1.9428902930940234527e-16 3.7296554733501272411e-17 1.570796326794896558" />
-<geometry>
-<mesh filename="package://tangs5dof/urdf/link_base.stl"/>
-</geometry>
-</collision>
-<inertial>
-<origin xyz="1.3255133999615608859e-05 0.00011682982551327208184 0.022301360573266926224" rpy="0 0 0"/>
-<mass value="0.12002083594684367918" />
-<inertia ixx="0.0001719477042664719756" ixy="1.4995133842293125234e-09"  ixz="-7.4030030482844742652e-10" iyy="0.00015985952079173305061" iyz="4.8835847869682312946e-06" izz="0.00025973363809823093963" />
-</inertial>
-</link>
-
-<joint name="dummy_joint" type="fixed">
-     <parent link="dummy"/>
-     <child link="link_base"/>
-   </joint>
-
-
-<link name="link_body">
-<visual>
-<origin xyz="0 -8.6666847497425613388e-34 0" rpy="0 -0 -4.0549623174188608425e-31" />
-<geometry>
-<mesh filename="package://tangs5dof/urdf/link_body.stl"/>
-</geometry>
-<material name="link_body_material">
-<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 -8.6666847497425613388e-34 0" rpy="0 -0 -4.0549623174188608425e-31" />
-<geometry>
-<mesh filename="package://tangs5dof/urdf/link_body.stl"/>
-</geometry>
-</collision>
-<inertial>
-<origin xyz="-0.0064368927716282314105 0.0013556622490916725183 0.017283456862703730494" rpy="0 0 0"/>
-<mass value="0.085013969989408674777" />
-<inertia ixx="7.2590632130354294728e-05" ixy="7.9880225262161873533e-07"  ixz="6.467979915412664964e-06" iyy="5.6210967383201727811e-05" iyz="-7.7893279410219734484e-06" izz="6.8281916421221113987e-05" />
-</inertial>
-</link>
-
-<link name="link_arm">
-<visual>
-<origin xyz="-0.057663569884095058904 0.00060194423267773133901 0" rpy="3.141592653589793116 -2.3506288325066302971e-18 -1.570796326794896558" />
-<geometry>
-<mesh filename="package://tangs5dof/urdf/link_arm.stl"/>
-</geometry>
-<material name="link_arm_material">
-<color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-0.057663569884095058904 0.00060194423267773133901 0" rpy="3.141592653589793116 -2.3506288325066302971e-18 -1.570796326794896558" />
-<geometry>
-<mesh filename="package://tangs5dof/urdf/link_arm.stl"/>
-</geometry>
-</collision>
-<inertial>
-<origin xyz="-0.05920077844297864933 -1.2406768289500774358e-05 -0.0077948564897016917041" rpy="0 0 0"/>
-<mass value="0.079963772883510669809" />
-<inertia ixx="1.1383675248669571873e-05" ixy="-1.0270272944390147578e-09"  ixz="2.9902863431550195164e-07" iyy="0.00013379400877519765029" iyz="2.6825379734455362387e-10" izz="0.00013980580671442969414" />
-</inertial>
-</link>
-
-<link name="link_forearm">
-<visual>
-<origin xyz="-6.3594060484284398171e-07 -0.032248319962359550672 0.0060000000521540641785" rpy="-3.141592653589793116 1.2685039077372661776e-19 5.5511151231257827021e-17" />
-<geometry>
-<mesh filename="package://tangs5dof/urdf/link_forearm.stl"/>
-</geometry>
-<material name="link_forearm_material">
-<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-6.3594060484284398171e-07 -0.032248319962359550672 0.0060000000521540641785" rpy="-3.141592653589793116 1.2685039077372661776e-19 5.5511151231257827021e-17" />
-<geometry>
-<mesh filename="package://tangs5dof/urdf/link_forearm.stl"/>
-</geometry>
-</collision>
-<inertial>
-<origin xyz="2.7236465313178384172e-05 -0.039262587428392996258 -0.0074010368270877070762" rpy="0 0 0"/>
-<mass value="0.052819407015602941324" />
-<inertia ixx="5.7316835569171644879e-05" ixy="7.3935105052972372161e-08"  ixz="6.1035161362996404119e-10" iyy="9.7447534283257420897e-06" iyz="-2.896290949500153478e-07" izz="6.1042835938249356289e-05" />
-</inertial>
-</link>
-
-<link name="link_hand">
-<visual>
-<origin xyz="0.0049857126365458193096 -0.014010243159726661066 -0.023000000044703455826" rpy="-1.570796326794896558 5.5511151231257827021e-17 0" />
-<geometry>
-<mesh filename="package://tangs5dof/urdf/link_hand.stl"/>
-</geometry>
-<material name="link_hand_material">
-<color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.0049857126365458193096 -0.014010243159726661066 -0.023000000044703455826" rpy="-1.570796326794896558 5.5511151231257827021e-17 0" />
-<geometry>
-<mesh filename="package://tangs5dof/urdf/link_hand.stl"/>
-</geometry>
-</collision>
-<inertial>
-<origin xyz="0.0050326087805534370362 -0.0061422584177719657256 -0.01770217860207829591" rpy="0 0 0"/>
-<mass value="0.018279517977360375258" />
-<inertia ixx="4.4689541870605957306e-06" ixy="-6.0435273610317869849e-09"  ixz="-1.5037566394940168762e-08" iyy="5.5538040396556170752e-06" iyz="-6.9194619595702871215e-07" izz="2.6129274261730799253e-06" />
-</inertial>
-</link>
-
-<link name="link_palm">
-<visual>
-<origin xyz="-0.013999994578522745314 -0.013999995911103513269 -0.01400000043213368156" rpy="-1.570796326794896558 -1.570796326794896558 0" />
-<geometry>
-<mesh filename="package://tangs5dof/urdf/link_palm.stl"/>
-</geometry>
-<material name="link_palm_material">
-<color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-0.013999994578522745314 -0.013999995911103513269 -0.01400000043213368156" rpy="-1.570796326794896558 -1.570796326794896558 0" />
-<geometry>
-<mesh filename="package://tangs5dof/urdf/link_palm.stl"/>
-</geometry>
-</collision>
-<inertial>
-<origin xyz="0.0060326973655727214596 0.024198225332850091529 0.0023721375113497922271" rpy="0 0 0"/>
-<mass value="0.020500595775101038837" />
-<inertia ixx="1.0452555817284263213e-05" ixy="-1.7678997608973621871e-06"  ixz="-4.7579438568302441839e-07" iyy="3.3320328451904816786e-06" iyz="-1.8966646485366233942e-06" izz="9.2794580348070164315e-06" />
-</inertial>
-</link>
-
-<joint name="wrist_pitch" type="revolute">
-<origin xyz="0.0049813961386296901068 -0.014010243159726681883 -0.027996103280433365379" rpy="-1.570796326794896558 -0.038080793091696346631 -5.4995910972554887091e-15" />
-<parent link="link_hand" />
-<child link="link_palm" />
-<axis xyz="0 0 1"/>
-<limit effort="1" velocity="20" lower="-1.570796326794896558" upper="1.570796326794896558"/>
-<joint_properties friction="0.0"/>
-</joint>
-
-<joint name="wrist_yaw" type="revolute">
-<origin xyz="-0.0053082245392911675541 -0.089748321005440834242 -0.0075144749285244276382" rpy="-1.570796326794896558 -0.26234740040539716865 7.9319393344061070401e-15" />
-<parent link="link_forearm" />
-<child link="link_hand" />
-<axis xyz="0 0 1"/>
-<limit effort="1" velocity="20" lower="-1.570796326794896558" upper="1.570796326794896558"/>
-<joint_properties friction="0.0"/>
-</joint>
-
-<joint name="elbow" type="revolute">
-<origin xyz="-0.11998739918318489239 -2.1231879309170642589e-06 1.7347234759768070944e-18" rpy="3.141592653589793116 -7.8822160764989523078e-16 0.60886401637823828192" />
-<parent link="link_arm" />
-<child link="link_forearm" />
-<axis xyz="0 0 1"/>
-<limit effort="1" velocity="20" lower="-3.141592653589793116" upper="2.0943951023931952626"/>
-<joint_properties friction="0.0"/>
-</joint>
-
-<joint name="shoulder" type="revolute">
-<origin xyz="-0.0040000001899898043542 0.013965289960663616886 0.040301559464014063972" rpy="1.5707963267953313213 1.5702417558227264038 -1.570796326798316267" />
-<parent link="link_body" />
-<child link="link_arm" />
-<axis xyz="0 0 1"/>
-<limit effort="1" velocity="20" lower="-1.570796326794896558" upper="1.570796326794896558"/>
-<joint_properties friction="0.0"/>
-</joint>
-
-<joint name="waist" type="revolute">
-<origin xyz="5.0306980803327405738e-17 1.3114530717629603727e-18 0.056000001728534705425" rpy="2.0816681711721669356e-15 4.5796699765786533862e-16 1.5455769190268391355" />
-<parent link="link_base" />
-<child link="link_body" />
-<axis xyz="0 0 1"/>
-<limit effort="1" velocity="20" lower="-1.570796326794896558" upper="1.570796326794896558"/>
-<joint_properties friction="0.0"/>
-</joint>
-
-
+    <link name="dummy" />
+    <link name="link_base">
+        <visual>
+            <origin xyz="-7.3532502849424115608e-65 4.3879474921794448663e-33 -1.6365532380980035014e-49" rpy="1.9428902930940234527e-16 3.7296554733501272411e-17 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://tangs5dof/urdf/link_base.stl" />
+            </geometry>
+            <material name="link_base_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-7.3532502849424115608e-65 4.3879474921794448663e-33 -1.6365532380980035014e-49" rpy="1.9428902930940234527e-16 3.7296554733501272411e-17 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://tangs5dof/urdf/link_base.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="1.3255133999615608859e-05 0.00011682982551327208184 0.022301360573266926224" rpy="0 0 0" />
+            <mass value="0.12002083594684367918" />
+            <inertia ixx="0.0001719477042664719756" ixy="1.4995133842293125234e-09" ixz="-7.4030030482844742652e-10" iyy="0.00015985952079173305061" iyz="4.8835847869682312946e-06" izz="0.00025973363809823093963" />
+        </inertial>
+    </link>
+    <joint name="dummy_joint" type="fixed">
+        <parent link="dummy" />
+        <child link="link_base" />
+    </joint>
+    <link name="link_body">
+        <visual>
+            <origin xyz="0 -8.6666847497425613388e-34 0" rpy="0 -0 -4.0549623174188608425e-31" />
+            <geometry>
+                <mesh filename="package://tangs5dof/urdf/link_body.stl" />
+            </geometry>
+            <material name="link_body_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 -8.6666847497425613388e-34 0" rpy="0 -0 -4.0549623174188608425e-31" />
+            <geometry>
+                <mesh filename="package://tangs5dof/urdf/link_body.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="-0.0064368927716282314105 0.0013556622490916725183 0.017283456862703730494" rpy="0 0 0" />
+            <mass value="0.085013969989408674777" />
+            <inertia ixx="7.2590632130354294728e-05" ixy="7.9880225262161873533e-07" ixz="6.467979915412664964e-06" iyy="5.6210967383201727811e-05" iyz="-7.7893279410219734484e-06" izz="6.8281916421221113987e-05" />
+        </inertial>
+    </link>
+    <link name="link_arm">
+        <visual>
+            <origin xyz="-0.057663569884095058904 0.00060194423267773133901 0" rpy="3.141592653589793116 -2.3506288325066302971e-18 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://tangs5dof/urdf/link_arm.stl" />
+            </geometry>
+            <material name="link_arm_material">
+                <color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.057663569884095058904 0.00060194423267773133901 0" rpy="3.141592653589793116 -2.3506288325066302971e-18 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://tangs5dof/urdf/link_arm.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="-0.05920077844297864933 -1.2406768289500774358e-05 -0.0077948564897016917041" rpy="0 0 0" />
+            <mass value="0.079963772883510669809" />
+            <inertia ixx="1.1383675248669571873e-05" ixy="-1.0270272944390147578e-09" ixz="2.9902863431550195164e-07" iyy="0.00013379400877519765029" iyz="2.6825379734455362387e-10" izz="0.00013980580671442969414" />
+        </inertial>
+    </link>
+    <link name="link_forearm">
+        <visual>
+            <origin xyz="-6.3594060484284398171e-07 -0.032248319962359550672 0.0060000000521540641785" rpy="-3.141592653589793116 1.2685039077372661776e-19 5.5511151231257827021e-17" />
+            <geometry>
+                <mesh filename="package://tangs5dof/urdf/link_forearm.stl" />
+            </geometry>
+            <material name="link_forearm_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-6.3594060484284398171e-07 -0.032248319962359550672 0.0060000000521540641785" rpy="-3.141592653589793116 1.2685039077372661776e-19 5.5511151231257827021e-17" />
+            <geometry>
+                <mesh filename="package://tangs5dof/urdf/link_forearm.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="2.7236465313178384172e-05 -0.039262587428392996258 -0.0074010368270877070762" rpy="0 0 0" />
+            <mass value="0.052819407015602941324" />
+            <inertia ixx="5.7316835569171644879e-05" ixy="7.3935105052972372161e-08" ixz="6.1035161362996404119e-10" iyy="9.7447534283257420897e-06" iyz="-2.896290949500153478e-07" izz="6.1042835938249356289e-05" />
+        </inertial>
+    </link>
+    <link name="link_hand">
+        <visual>
+            <origin xyz="0.0049857126365458193096 -0.014010243159726661066 -0.023000000044703455826" rpy="-1.570796326794896558 5.5511151231257827021e-17 0" />
+            <geometry>
+                <mesh filename="package://tangs5dof/urdf/link_hand.stl" />
+            </geometry>
+            <material name="link_hand_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0049857126365458193096 -0.014010243159726661066 -0.023000000044703455826" rpy="-1.570796326794896558 5.5511151231257827021e-17 0" />
+            <geometry>
+                <mesh filename="package://tangs5dof/urdf/link_hand.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0.0050326087805534370362 -0.0061422584177719657256 -0.01770217860207829591" rpy="0 0 0" />
+            <mass value="0.018279517977360375258" />
+            <inertia ixx="4.4689541870605957306e-06" ixy="-6.0435273610317869849e-09" ixz="-1.5037566394940168762e-08" iyy="5.5538040396556170752e-06" iyz="-6.9194619595702871215e-07" izz="2.6129274261730799253e-06" />
+        </inertial>
+    </link>
+    <link name="link_palm">
+        <visual>
+            <origin xyz="-0.013999994578522745314 -0.013999995911103513269 -0.01400000043213368156" rpy="-1.570796326794896558 -1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://tangs5dof/urdf/link_palm.stl" />
+            </geometry>
+            <material name="link_palm_material">
+                <color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.013999994578522745314 -0.013999995911103513269 -0.01400000043213368156" rpy="-1.570796326794896558 -1.570796326794896558 0" />
+            <geometry>
+                <mesh filename="package://tangs5dof/urdf/link_palm.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0.0060326973655727214596 0.024198225332850091529 0.0023721375113497922271" rpy="0 0 0" />
+            <mass value="0.020500595775101038837" />
+            <inertia ixx="1.0452555817284263213e-05" ixy="-1.7678997608973621871e-06" ixz="-4.7579438568302441839e-07" iyy="3.3320328451904816786e-06" iyz="-1.8966646485366233942e-06" izz="9.2794580348070164315e-06" />
+        </inertial>
+    </link>
+    <joint name="wrist_pitch" type="revolute">
+        <origin xyz="0.0049813961386296901068 -0.014010243159726681883 -0.027996103280433365379" rpy="-1.570796326794896558 -0.038080793091696346631 -5.4995910972554887091e-15" />
+        <parent link="link_hand" />
+        <child link="link_palm" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" lower="-1.570796326794896558" upper="1.570796326794896558" />
+        <joint_properties friction="0.0" />
+    </joint>
+    <joint name="wrist_yaw" type="revolute">
+        <origin xyz="-0.0053082245392911675541 -0.089748321005440834242 -0.0075144749285244276382" rpy="-1.570796326794896558 -0.26234740040539716865 7.9319393344061070401e-15" />
+        <parent link="link_forearm" />
+        <child link="link_hand" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" lower="-1.570796326794896558" upper="1.570796326794896558" />
+        <joint_properties friction="0.0" />
+    </joint>
+    <joint name="elbow" type="revolute">
+        <origin xyz="-0.11998739918318489239 -2.1231879309170642589e-06 1.7347234759768070944e-18" rpy="3.141592653589793116 -7.8822160764989523078e-16 0.60886401637823828192" />
+        <parent link="link_arm" />
+        <child link="link_forearm" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" lower="-3.141592653589793116" upper="2.0943951023931952626" />
+        <joint_properties friction="0.0" />
+    </joint>
+    <joint name="shoulder" type="revolute">
+        <origin xyz="-0.0040000001899898043542 0.013965289960663616886 0.040301559464014063972" rpy="1.5707963267953313213 1.5702417558227264038 -1.570796326798316267" />
+        <parent link="link_body" />
+        <child link="link_arm" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" lower="-1.570796326794896558" upper="1.570796326794896558" />
+        <joint_properties friction="0.0" />
+    </joint>
+    <joint name="waist" type="revolute">
+        <origin xyz="5.0306980803327405738e-17 1.3114530717629603727e-18 0.056000001728534705425" rpy="2.0816681711721669356e-15 4.5796699765786533862e-16 1.5455769190268391355" />
+        <parent link="link_base" />
+        <child link="link_body" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" lower="-1.570796326794896558" upper="1.570796326794896558" />
+        <joint_properties friction="0.0" />
+    </joint>
+    <transmission name="trans_wrist_pitch">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="wrist_pitch">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="wrist_pitch_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_wrist_yaw">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="wrist_yaw">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="wrist_yaw_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_elbow">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="elbow">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="elbow_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_shoulder">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="shoulder">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="shoulder_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_waist">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="waist">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="waist_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo>
+        <plugin name="gazebo_ros_control">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
 </robot>
+

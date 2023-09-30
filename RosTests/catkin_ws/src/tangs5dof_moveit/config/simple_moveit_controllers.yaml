@@ -6,16 +6,6 @@ controller_list:
     joints:
       - elbow
       - shoulder
-  - name: arm_controller
-    action_ns: follow_joint_trajectory
-    type: FollowJointTrajectory
-    default: True
-    joints:
-      - end_effector
       - waist
-  - name: end_effector_controller
-    action_ns: follow_joint_trajectory
-    type: FollowJointTrajectory
-    default: True
-    joints:
-      - end_effector
+      - wrist_yaw
+      - wrist_pitch

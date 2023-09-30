@@ -3,6 +3,9 @@ Thangs5dof_controller:
   joints:
     - elbow
     - shoulder
+    - waist
+    - wrist_yaw
+    - wrist_pitch
   gains:
     elbow:
       p: 100
@@ -14,28 +17,17 @@ Thangs5dof_controller:
       d: 1
       i: 1
       i_clamp: 1
-arm_controller:
-  type: effort_controllers/JointTrajectoryController
-  joints:
-    - end_effector
-    - waist
-  gains:
-    end_effector:
-      p: 100
-      d: 1
-      i: 1
-      i_clamp: 1
     waist:
       p: 100
       d: 1
       i: 1
       i_clamp: 1
-end_effector_controller:
-  type: effort_controllers/JointTrajectoryController
-  joints:
-    - end_effector
-  gains:
-    end_effector:
+    wrist_yaw:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    wrist_pitch:
       p: 100
       d: 1
       i: 1
