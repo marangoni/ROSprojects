@@ -1,0 +1,5 @@
+tangs5dof
+/home/luiz/ROSprojects/RosTests/catkin_ws/devel/.private/tangs5dof/cmake.lock /home/luiz/ROSprojects/RosTests/catkin_ws/devel/./cmake.lock
+/home/luiz/ROSprojects/RosTests/catkin_ws/devel/.private/tangs5dof/lib/pkgconfig/tangs5dof.pc /home/luiz/ROSprojects/RosTests/catkin_ws/devel/lib/pkgconfig/tangs5dof.pc
+/home/luiz/ROSprojects/RosTests/catkin_ws/devel/.private/tangs5dof/share/tangs5dof/cmake/tangs5dofConfig-version.cmake /home/luiz/ROSprojects/RosTests/catkin_ws/devel/share/tangs5dof/cmake/tangs5dofConfig-version.cmake
+/home/luiz/ROSprojects/RosTests/catkin_ws/devel/.private/tangs5dof/share/tangs5dof/cmake/tangs5dofConfig.cmake /home/luiz/ROSprojects/RosTests/catkin_ws/devel/share/tangs5dof/cmake/tangs5dofConfig.cmake

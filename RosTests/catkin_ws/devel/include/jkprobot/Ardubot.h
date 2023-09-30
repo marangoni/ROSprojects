@@ -26,12 +26,16 @@ struct Ardubot_
   Ardubot_()
     : base_deg(0)
     , waist_deg(0)
-    , shoulder_deg(0)  {
+    , shoulder_deg(0)
+    , wrist_deg(0)
+    , grip_deg(0)  {
     }
   Ardubot_(const ContainerAllocator& _alloc)
     : base_deg(0)
     , waist_deg(0)
-    , shoulder_deg(0)  {
+    , shoulder_deg(0)
+    , wrist_deg(0)
+    , grip_deg(0)  {
   (void)_alloc;
     }
 
@@ -45,6 +49,12 @@ struct Ardubot_
 
    typedef int32_t _shoulder_deg_type;
   _shoulder_deg_type shoulder_deg;
+
+   typedef int32_t _wrist_deg_type;
+  _wrist_deg_type wrist_deg;
+
+   typedef int32_t _grip_deg_type;
+  _grip_deg_type grip_deg;
 
 
 
@@ -77,7 +87,9 @@ bool operator==(const ::jkprobot::Ardubot_<ContainerAllocator1> & lhs, const ::j
 {
   return lhs.base_deg == rhs.base_deg &&
     lhs.waist_deg == rhs.waist_deg &&
-    lhs.shoulder_deg == rhs.shoulder_deg;
+    lhs.shoulder_deg == rhs.shoulder_deg &&
+    lhs.wrist_deg == rhs.wrist_deg &&
+    lhs.grip_deg == rhs.grip_deg;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -134,12 +146,12 @@ struct MD5Sum< ::jkprobot::Ardubot_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "25c6d417204f56ff08c29e46dee18838";
+    return "416e94e338a7777f87f98090399f3e9b";
   }
 
   static const char* value(const ::jkprobot::Ardubot_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x25c6d417204f56ffULL;
-  static const uint64_t static_value2 = 0x08c29e46dee18838ULL;
+  static const uint64_t static_value1 = 0x416e94e338a7777fULL;
+  static const uint64_t static_value2 = 0x87f98090399f3e9bULL;
 };
 
 template<class ContainerAllocator>
@@ -161,6 +173,8 @@ struct Definition< ::jkprobot::Ardubot_<ContainerAllocator> >
     return "int32 base_deg\n"
 "int32 waist_deg\n"
 "int32 shoulder_deg\n"
+"int32 wrist_deg\n"
+"int32 grip_deg\n"
 ;
   }
 
@@ -182,6 +196,8 @@ namespace serialization
       stream.next(m.base_deg);
       stream.next(m.waist_deg);
       stream.next(m.shoulder_deg);
+      stream.next(m.wrist_deg);
+      stream.next(m.grip_deg);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -206,6 +222,10 @@ struct Printer< ::jkprobot::Ardubot_<ContainerAllocator> >
     Printer<int32_t>::stream(s, indent + "  ", v.waist_deg);
     s << indent << "shoulder_deg: ";
     Printer<int32_t>::stream(s, indent + "  ", v.shoulder_deg);
+    s << indent << "wrist_deg: ";
+    Printer<int32_t>::stream(s, indent + "  ", v.wrist_deg);
+    s << indent << "grip_deg: ";
+    Printer<int32_t>::stream(s, indent + "  ", v.grip_deg);
   }
 };
 

@@ -1,0 +1,114 @@
+# Como rodar robo jkp teste ROS - VERSAO 1.0 (versão raiz ;)
+
+# OBJETIVO:
+   - Controlar o Arduino num sistema ROS utilizando uma interface grafica (GUI) rodando no computador local
+   
+# Ambiente:
+   - Node Master rodando no computador local
+   - Node first_app.py rodando no computador local
+   - Node jpk.py rodando no computador local
+   - Node rosserial rodando no RPi (nó escravo)
+
+# 1) Conectar o Arduino no RPi
+# 2) Ligar o RPi
+  Atenção: O RPi deve estar configurado para acessar a rede local através do wifi usando IP fixo (vide respectivo tutorial)
+  
+# 3) Baixar OS MESMOS arquivos para o RPi e o computador local (importante)
+    
+    opção 1: clonar os arquivos do repositorio github utilizando (repositório deve ser melhor organizado)
+    gitclone https://github.com/marangoni/ROSprojects.git
+    OU
+    opção 2: copiar os arquivos localmente utilizando o gerenciador de arquivos (nautilus). Nesse caso o samba deve estar configurado (vide   respectivo tutorial)
+    
+    OU
+    opção 3: utilizar o comando scp para copiar os arquivos e diretório do computador local para o RPi
+    
+# 4) Inicializar os workspaces do ROS no computador local E no RPi
+   ir para a pasta catkin_ws:
+   No computador local:
+   cd /home/luiz/ROSprojects/RosTests/catkin_ws
+   catkin_make
+   
+   No Rpi:
+   ssh nuria@192.168.68.61 #para conectar ao RPi. Endereço ipfixo deve estar configurado (vide tutorial)
+   cd /home/nuria/ROSprojects/RosTests/catkin_ws
+   catkin_make
+
+# 5) Realizar as configurações de ambiente ROS (pode ser melhorado utilizando os scripts ~/.bashrc)
+  IMPORTANTE: 1) Realizar as configurações antes de rodar o ROSCORE
+              2) Cada vez que abrir um novo terminal esses comandos deverão ser digitados novamente
+  
+  No computador local:
+  
+  # substituir
+  IP_COMPUTADOR_LOCAL:11311 pelo ip do computador na rede (ifconfig)
+  IP_computador_local: ip sem o protocolo e porta
+  
+  #export ROS_MASTER_URI=http://IP_COMPUTADOR_LOCAL:11311
+  #export ROS_IP=IP_Computador_local
+  
+  source devel/setup.bash
+  export ROS_MASTER_URI=http://192.168.68.69:11311
+  export ROS_IP=192.168.68.69
+  
+  No RPi:
+  Fazer login com o ssh (se não tiver feito)
+  ssh nuria@192.168.68.61
+  cd /home/nuria/ROSprojects/RosTests/catkin_ws
+  source devel/setup.bash
+  
+  #export ROS_MASTER_URI=http://IP_COMPUTADOR_LOCAL:11311
+  #export ROS_IP=IP_Computador_RPi #computador SLAVE (RPi)
+  #obter o ip utilizando ifconfig
+  
+  export ROS_MASTER_URI=http://192.168.68.69:11311
+  export ROS_IP=192.168.68.61
+  
+#6) Rodar o Roscore no computador local
+
+    roscore
+    
+#7) Rodar a interface gráfica em outro terminal 
+    rosrun robogui firstapp.py
+
+#8) Rodar o jpk em outro terminal
+    rosrun jkprobot jpk.py
+    
+#9) No terminal do RPi rodar o rosserial: (para verificar se a conexão serial está ok: ls /dev/ttyUSB0 )
+    rosrun rosserial_python serial_node.py /dev/ttyUSB0
+    
+#10) Testes:
+Verificar se todos os nós "subiram"
+    rosnode list
+    
+    # Devem aparecer os nós (entre outros):
+    \jkp_robot_node
+    \simple_gui
+    \serial_node
+    
+Verificar graficamente o sistema:
+    rosrun rqt_graph rqt_graph
+    
+Verificar se os nós estão conectados:
+
+    # para verificar se os nós estão ok. Devem aparecer as conexões do nó \serial_node
+    rosnode info \serial_node
+    
+Verificar se os tópicos estão ok:
+    rostopic list
+    
+    #devem aparecer os tópicos (entre outros)
+    \button
+    \servo_move
+    
+    Abrir dois novos terminais, rodar os comandos de inicialização (passo 5)
+    Testar a publicação do comando publicar na GUI no tópico \button
+    rostopic echo /button
+    
+    Testar o recebimento da mensagem pelo nó jkp_robot_node e a publicação para o \serial_node
+    rostopic echo /servo_move
+    
+    # Se o sistema estiver ok - toda vez que for publicada uma nova posição os servos deverão se movimentar no arduino
+    
+    
+ 
