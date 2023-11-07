@@ -1,8 +1,0 @@
-prefix=/home/luiz/ROSprojects/RosTests/catkin_ws/install
-
-Name: tangs
-Description: Description of tangs
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
