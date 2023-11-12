@@ -47,13 +47,14 @@
   #export ROS_MASTER_URI=http://IP_COMPUTADOR_LOCAL:11311
   #export ROS_IP=IP_Computador_local
   
+  cd /home/luiz/ROSprojects/RosTests/catkin_ws
   source devel/setup.bash
   export ROS_MASTER_URI=http://192.168.68.69:11311
   export ROS_IP=192.168.68.69
   
   No RPi:
   Fazer login com o ssh (se não tiver feito)
-  ssh nuria@192.168.68.61
+  ssh nuria@192.168.68.66
   cd /home/nuria/ROSprojects/RosTests/catkin_ws
   source devel/setup.bash
   
@@ -62,7 +63,7 @@
   #obter o ip utilizando ifconfig
   
   export ROS_MASTER_URI=http://192.168.68.69:11311
-  export ROS_IP=192.168.68.61
+  export ROS_IP=192.168.68.66
   
 #6) Rodar o Roscore no computador local
 

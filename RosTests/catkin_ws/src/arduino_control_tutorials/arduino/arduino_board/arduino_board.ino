@@ -10,7 +10,7 @@
  
 #include <Servo.h> 
 #include <ros.h>
-#include <arduino_control_tutorials/Ardubot.h>
+#include <jkprobot/Ardubot.h>
 
 //Comando rosserial para criacao do node /serial_node
 ros::NodeHandle  nh;
@@ -24,7 +24,7 @@ Servo shoulder_servo;
 //Comanda os servos - base_servo, waist_servo e shoulder_servo para movimento conforme valores recebidos na mensagem
 //Inverte o led na placa
 
-void servo_cb( const arduino_control_tutorials::Ardubot& cmd_msg){
+void servo_cb( const jkprobot::Ardubot& cmd_msg){
   //set servo angle, should be from 0-180 
   base_servo.write(cmd_msg.base_deg);
   delay(15);
@@ -39,7 +39,7 @@ void servo_cb( const arduino_control_tutorials::Ardubot& cmd_msg){
 //Define a funcao callback com o nome servo_cb
 //Toda vez que uma mensagem /servo_move é recebida, essa rotina é chamada
 
-ros::Subscriber<arduino_control_tutorials::Ardubot> sub("servo_move", servo_cb);
+ros::Subscriber<jkprobot::Ardubot> sub("servo_move", servo_cb);
 
 
 
@@ -56,9 +56,9 @@ void setup(){
   
   base_servo.attach(9); //attach it to pin 9
   base_servo.write(0); //posicao inicial servo
-  waist_servo.attach(10); //attach it to pin 9
+  waist_servo.attach(10); //attach it to pin 10
   waist_servo.write(0); //posicao inicial servo
-  shoulder_servo.attach(11); //attach it to pin 9
+  shoulder_servo.attach(11); //attach it to pin 11
   shoulder_servo.write(0); //posicao inicial servo
   
 }
