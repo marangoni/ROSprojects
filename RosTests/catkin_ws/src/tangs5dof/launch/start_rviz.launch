@@ -1,0 +1,7 @@
+<launch>
+
+  <!-- Show in Rviz   -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find tangs5dof)/rviz_config/tangs5dof_gazebo.rviz"/>
+
+
+</launch>

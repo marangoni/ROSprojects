@@ -188,47 +188,7 @@
         <joint_properties friction="0.0" />
     </joint>
     
-    <transmission name="trans_wrist_pitch">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="wrist_pitch">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="wrist_pitch_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
     
-    <transmission name="trans_wrist_yaw">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="wrist_yaw">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="wrist_yaw_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_elbow">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="elbow">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="elbow_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_shoulder">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="shoulder">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="shoulder_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
     <transmission name="trans_waist">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="waist">
@@ -239,8 +199,9 @@
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
+    
     <gazebo>
-  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
     <robotNamespace>/onshape</robotNamespace>
   </plugin>
 </gazebo>
