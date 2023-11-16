@@ -76,7 +76,7 @@
     
 #9) No terminal do RPi rodar o rosserial: (para verificar se a conexão serial está ok: ls /dev/ttyUSB0 )
     rosrun rosserial_python serial_node.py /dev/ttyUSB0
-    
+
 #10) Testes:
 Verificar se todos os nós "subiram"
     rosnode list
@@ -85,7 +85,13 @@ Verificar se todos os nós "subiram"
     \jkp_robot_node
     \simple_gui
     \serial_node
-    
+
+#11) Executar o rviz para carregar a visualização do thangs5dof
+
+roslaunch tangs5dof urdf_visualize.launch model:='$(find tangs5dof)/urdf/robot.urdf' 
+
+
+
 Verificar graficamente o sistema:
     rosrun rqt_graph rqt_graph
     

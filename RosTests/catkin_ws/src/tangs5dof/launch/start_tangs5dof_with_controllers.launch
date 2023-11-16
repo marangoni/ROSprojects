@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <include file="$(find tangs5dof)/launch/spawn_tangs5dof_with_controllers.launch"/>
+    <include file="$(find tangs5dof)/launch/tangs5dof_controllers.launch"/>
+</launch>

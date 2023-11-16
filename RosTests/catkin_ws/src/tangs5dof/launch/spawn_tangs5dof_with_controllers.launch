@@ -3,8 +3,11 @@
     <include file="$(find tangs5dof)/launch/spawn_urdf.launch">
         <arg name="x" value="0.0" />
         <arg name="y" value="0.0" />
-        <arg name="z" value="0.0" />
-        <arg name="urdf_robot_file" value="$(find tangs5dof)/urdf/robot.urdf" />
+        <arg name="z" value="0.2" />
+        <arg 
+        name="urdf_robot_file"
+        value="$(find tangs5dof)/urdf/robot.urdf"
+        />
         <arg name="robot_name" value="onshape" />
     </include>
 </launch>
