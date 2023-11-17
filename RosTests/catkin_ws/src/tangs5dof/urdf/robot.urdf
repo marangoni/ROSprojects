@@ -147,12 +147,13 @@
             <inertia ixx="1.0452555817284263213e-05" ixy="-1.7678997608973621871e-06" ixz="-4.7579438568302441839e-07" iyy="3.3320328451904816786e-06" iyz="-1.8966646485366233942e-06" izz="9.2794580348070164315e-06" />
         </inertial>
     </link>
+    
     <joint name="wrist_pitch" type="revolute">
         <origin xyz="0.0049813961386296901068 -0.014010243159726681883 -0.027996103280433365379" rpy="-1.570796326794896558 -0.038080793091696346631 -5.4995910972554887091e-15" />
         <parent link="link_hand" />
         <child link="link_palm" />
         <axis xyz="0 0 1" />
-        <limit effort="1" velocity="20" lower="-1.570796326794896558" upper="1.570796326794896558" />
+        <limit effort="1" velocity="0.5" lower="-1.570796326794896558" upper="1.570796326794896558" />
         <joint_properties friction="0.0" />
     </joint>
     <joint name="wrist_yaw" type="revolute">
@@ -160,7 +161,7 @@
         <parent link="link_forearm" />
         <child link="link_hand" />
         <axis xyz="0 0 1" />
-        <limit effort="1" velocity="20" lower="-1.570796326794896558" upper="1.570796326794896558" />
+        <limit effort="2" velocity="0.5" lower="-1.570796326794896558" upper="1.570796326794896558" />
         <joint_properties friction="0.0" />
     </joint>
     <joint name="elbow" type="revolute">
@@ -168,7 +169,7 @@
         <parent link="link_arm" />
         <child link="link_forearm" />
         <axis xyz="0 0 1" />
-        <limit effort="1" velocity="20" lower="-3.141592653589793116" upper="2.0943951023931952626" />
+        <limit effort="1" velocity="0.5" lower="-3.141592653589793116" upper="2.0943951023931952626" />
         <joint_properties friction="0.0" />
     </joint>
     <joint name="shoulder" type="revolute">
@@ -176,7 +177,7 @@
         <parent link="link_body" />
         <child link="link_arm" />
         <axis xyz="0 0 1" />
-        <limit effort="1" velocity="20" lower="-1.570796326794896558" upper="1.570796326794896558" />
+        <limit effort="2" velocity="1.0" lower="-1.570796326794896558" upper="1.570796326794896558" />
         <joint_properties friction="0.0" />
     </joint>
     <joint name="waist" type="revolute">
@@ -184,41 +185,21 @@
         <parent link="link_base" />
         <child link="link_body" />
         <axis xyz="0 0 1" />
-        <limit effort="1" velocity="20" lower="-1.570796326794896558" upper="1.570796326794896558" />
+        <limit effort="0.1" velocity="0.5" lower="-1.570796326794896558" upper="1.570796326794896558" />
         <joint_properties friction="0.0" />
     </joint>
     
-    <transmission name="trans_wrist_pitch">
+    <transmission name="trans_waist">
         <type>transmission_interface/SimpleTransmission</type>
-        <joint name="wrist_pitch">
+        <joint name="waist">
             <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         </joint>
-        <actuator name="wrist_pitch_motor">
+        <actuator name="waist_motor">
             <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
-    </transmission>
+    </transmission>      
     
-    <transmission name="trans_wrist_yaw">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="wrist_yaw">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="wrist_yaw_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_elbow">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="elbow">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="elbow_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
     <transmission name="trans_shoulder">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="shoulder">
@@ -229,16 +210,40 @@
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
-    <transmission name="trans_waist">
+    
+    <transmission name="trans_elbow">
         <type>transmission_interface/SimpleTransmission</type>
-        <joint name="waist">
+        <joint name="elbow">
             <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         </joint>
-        <actuator name="waist_motor">
+        <actuator name="elbow_motor">
             <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
+
+    <transmission name="trans_wrist_yaw">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="wrist_yaw">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="wrist_yaw_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+
+    <transmission name="trans_wrist_pitch">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="wrist_pitch">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="wrist_pitch_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+
     <gazebo>
   <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
     <robotNamespace>/onshape</robotNamespace>

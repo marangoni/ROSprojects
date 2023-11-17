@@ -184,7 +184,7 @@
         <parent link="link_base" />
         <child link="link_body" />
         <axis xyz="0 0 1" />
-        <limit effort="1" velocity="20" lower="-1.570796326794896558" upper="1.570796326794896558" />
+        <limit effort="0.1" velocity="0.5" lower="-1.570796326794896558" upper="1.570796326794896558" />
         <joint_properties friction="0.0" />
     </joint>
     

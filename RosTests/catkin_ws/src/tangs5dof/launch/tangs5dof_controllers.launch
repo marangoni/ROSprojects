@@ -6,10 +6,10 @@
 
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
     output="screen" ns="/onshape" args="wrist_pitch_position_controller 
-                                        wrist_yaw_position_controller 
-                                        elbow_position_controller 
+                                        wrist_yaw_position_controller
                                         shoulder_position_controller 
-                                        waist_position_controller 
+                                        waist_position_controller
+                                        elbow_position_controller
                                         joint_state_controller --shutdown-timeout 3"/>
 
   <!-- convert joint states to TF transforms for rviz, etc -->
