@@ -1,5 +1,0 @@
-Como configurar visualizar o robô no rviz
-
-Usar o comando:
-
-roslaunch tangs5dof urdf_visualize.launch model:='$(find tangs5dof)/urdf/robot.urdf' 

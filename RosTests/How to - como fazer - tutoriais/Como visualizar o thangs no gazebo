@@ -1,0 +1,106 @@
+Tutorial para simulação do Thangs no gazebo e exibição no RVIZ
+
+Fonte: URDF Course - unit 3 - using URDF for gazebo
+
+## Parte 01 - PREPARAÇÃO
+
+# 1) Configurar o arquivo URDF para que tenha:
+   - Inertias
+   - Gazebo physical properties
+   - Collisions
+   - Visual properties
+   - Gazebo sensors
+
+# 2) Crie dois arquivos launch
+
+spawn_urdf.launch - carrega o arquivo URDF num ponto do espaço
+spawn_tangs5dof.launch - carrega o robot thangs
+
+# 3) Inicializar a Simulação no gazebo
+No terminal 1:
+
+cd ~/catkin_ws
+source devel/setup.bash
+roslaunch gazebo_ros empty_world.launch
+
+
+# o pacote simulation_gazebo deve estar instalado
+
+# 4) Carrega a simulação no gazebo
+No terminal 2:
+
+cd ~/catkin_ws
+source devel/setup.bash
+roslaunch tangs5dof spawn_tangs5dof.launch
+
+para retirar o modelo da simulação
+rosservice call /gazebo/delete_model "model_name: 'onshape'"
+
+# 5) Visualiza o thangs no rviz
+
+cd ~/catkin_ws
+source devel/setup.bash
+roslaunch tangs5dof urdf_visualize_preconfig.launch model:='$(find tangs5dof)/urdf/robot.urdf'
+
+# 6) Inlusão dos controladores
+
+* Criar o arquivo tangs_with_controllers.yaml e incluir a informação dos controladores
+  - Aqui são configurados os parametros PID dos controladores
+  - Arquivo sensível à identação - CUIDADO ao EDITAR
+
+* Incluir as transmissões e controlador no arquivo URDF
+  - Atenção para os parametros de velocidade e força
+
+
+# 7) Criar os arquivos launch para carregar
+
+  - start_tangs5dof_width_controllers.launch - arquivo principal que carrega os demais
+  
+  - spawn_tangs5dof_with_controllers.launch - carrega o arquivo urdf com o modelo do robo
+  
+  - tangs5dof_controllers.launch - carrega os controladores. Precisa ser editado para inclusão dos controladores que serão carregados na simulação
+  
+  PARTE 2: Execução dos arquivos
+  
+  # 1) Carregue o gazebo ros
+  
+  roslaunch gazebo_ros empty_world.launch 
+  
+  *O gazebo irá abrir
+  
+  # 2) Carregue o modelo para simulação no gazebo
+  
+  roslaunch tangs5dof start_tangs5dof_with_controllers.launch
+  
+  * o modelo estará sendo simulado no Gazebo
+  
+  # 3) Para controlar o robo, utilize o rqt_gui
+  
+  rosrun rqt_gui rqt_gui
+  
+  * Selecionar -Plugin -> topic publisher -> Escolher os tópicos dos controladores das juntas do robo
+  
+  onshape/elbow_controller/command
+  onshape/waist_controller/command
+  ...shoulder
+  ...wrist_yaw
+  ...Wrist_pitch
+  
+  Ao publicar nestes tópicos o robo deverá se movimentar
+  OBS: 1) Valores válidos entre -1.57 e 1.57 (pi/2 e -pi/2) conforme arquivo urdf
+  2) Ajustar os parametros velocidade e effort no arquivo urdf das juntas para "selecionar" o servo, ou seja, força e velocidades adequadas para movimentação do conjunto
+  3) Os parametros PID dos controladores podem ser ajustados pela interface rqt_configure - para melhorar a dinamica de movimentação
+  
+  rosrun rqt_reconfigure rqt_reconfigure
+  
+  # 4) Visualizar a movimentação do robo no rviz
+  
+  roslaunch tangs5dof start_rviz.launch
+  
+  Ao executar o tangs5dof deverá aparecer se movendo conforme a simulação
+  
+
+
+
+
+
