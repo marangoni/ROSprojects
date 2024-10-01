@@ -51,3 +51,4 @@ qtcreator-*
 CATKIN_IGNORE
 
 RosTests/catkin_ws/src/moveit_resources
+Roomba_project.zip
