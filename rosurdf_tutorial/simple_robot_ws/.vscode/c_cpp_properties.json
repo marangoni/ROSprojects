@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/luiz/ROSprojects/Roomba_project/catkin_ws/devel/include/**",
+        "/home/luiz/ROSprojects/RosTests/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/luiz/ROSprojects/Roomba_project/catkin_ws/src/create_robot/create_driver/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
