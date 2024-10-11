@@ -3,5 +3,6 @@
  
     <xacro:include filename="$(find robot_articulated)/description/robot_core.xacro"/>
     
+    <!-- <xacro:include filename="$(find robot_articulated)/description/gazebo_control.xacro"/> -->
  
 </robot>

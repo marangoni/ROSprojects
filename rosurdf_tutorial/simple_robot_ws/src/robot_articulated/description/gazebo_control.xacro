@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+ 
+    <gazebo>
+        <plugin name="diff_drive_controller" filename="libgazebo_ros_diff_drive.so">
+          <ros>
+            <!-- Defina os tópicos que o controlador deve escutar -->
+            <namespace>/</namespace>
+            <remapping>cmd_vel:=/cmd_vel</remapping>
+            <remapping>odom:=/odom</remapping>
+          </ros>
+      
+          <!-- Nome das juntas das rodas -->
+          <left_joint>left_wheel_joint</left_joint>
+          <right_joint>right_wheel_joint</right_joint>
+      
+          <!-- Parâmetros físicos do robô -->
+          <wheel_separation>0.20</wheel_separation>
+          <wheel_diameter>0.06</wheel_diameter>
+      
+          <!-- Outras configurações do controlador -->
+          <publishWheelTF>true</publishWheelTF>       <!-- Publica a TF das rodas -->
+          <publishOdomTF>true</publishOdomTF>         <!-- Publica a TF do odômetro -->
+          <publishWheelJointState>true</publishWheelJointState> <!-- Publica o estado das juntas das rodas -->
+          <odometrySource>1</odometrySource>          <!-- Fonte de odometria: 1 para encoder -->
+          <odometryFrame>odom</odometryFrame>         <!-- Frame de odometria -->
+          <robotBaseFrame>base_footprint</robotBaseFrame> <!-- Frame base do robô -->
+      
+          <!-- Configurações adicionais -->
+          <wheelAcceleration>0</wheelAcceleration>    <!-- Aceleração das rodas -->
+          <wheelTorque>5</wheelTorque>                <!-- Torque das rodas -->
+          <updateRate>100</updateRate>                <!-- Taxa de atualização do controlador -->
+        </plugin>
+      </gazebo>
+ 
+</robot>

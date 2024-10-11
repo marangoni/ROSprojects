@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+	<include file="$(find robot_articulated)/launch/start_world.launch"/>
+	<include file="$(find robot_articulated)/launch/robot_spawn_xacro.launch"/>
+	<!-- <include file="$(find box_human_gazebo)/launch/robot_control.launch"/> -->
+	
+
+</launch>

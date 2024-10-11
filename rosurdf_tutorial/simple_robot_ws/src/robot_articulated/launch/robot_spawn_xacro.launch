@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	
+	<arg name="x" default="0.0" />
+    <arg name="y" default="0.0" />
+    <arg name="z" default="0.0" />
+    <arg name="roll" default="0"/>
+    <arg name="pitch" default="0"/>
+    <arg name="yaw" default="0.0" />
+
+	<arg name="model" default="$(find robot_articulated)/description/robot.urdf.xacro"/>
+    
+    <!-- <arg name="model" default="$(find robot_articulated)/urdf/box_human.urdf"/> -->
+    
+	<arg name="robot_name" default="roomba1"/>
+
+	<group ns="$(arg robot_name)">
+        
+        <param name="robot_description" command="cat $(arg model)" />
+		
+        <!-- Converts the XACRO robot information to UDRF and use it as a robot_description parameter -->
+		<param name="robot_description" command="$(find xacro)/xacro $(arg model) x_pos:=$(arg x) y_pos:=$(arg y) z_pos:=$(arg z) yaw_pos:=$(arg yaw) robot_name:=$(arg robot_name)" />
+        
+        <node name="robot_state_publisher_box_human" pkg="robot_state_publisher" type="robot_state_publisher"
+			respawn="false" output="screen">
+			<param name="publish_frequency" type="double" value="5.0" />
+		</node>
+
+		<node name="urdf_spawner"
+				pkg="gazebo_ros"
+				type="spawn_model"
+				respawn="false"
+				output="screen"
+				args="-urdf -model $(arg robot_name) -param robot_description"/>
+    </group>
+ 		  
+</launch>

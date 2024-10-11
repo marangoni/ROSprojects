@@ -1,0 +1,14 @@
+<launch>
+    <arg name="model" />
+    
+     <!-- Argumento para definir o uso do tempo de simulação -->
+     <arg name="use_sim_time" default="false" />
+    
+    <param name="robot_description" command="$(find xacro)/xacro $(find robot_articulated)/description/robot.urdf.xacro" />
+            
+   <!-- Node do robot_state_publisher -->
+     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen">
+            <param name="use_sim_time" value="$(arg use_sim_time)" />
+    </node>
+
+</launch>
